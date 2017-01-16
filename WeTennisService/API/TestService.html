@@ -1,0 +1,975 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="/Test/jquery-1.8.2.js"></script>
+    <script type="text/javascript">
+
+        //用户
+        function signup()
+        {
+            var signup = {
+                "method": "signup",
+                "password": "1",
+                "username": "黄帝",
+                "phone": "1",
+                "activationCode": "123567"
+            }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",   //内容类型
+                dataType: "json",
+                url: " /API/FEservice.ashx?method=signup",
+                data: JSON.stringify(signup),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function signin() {
+            var signin = {
+                "method": "signin",
+                "username": "13678162515",
+                "password": "liutao1230"
+            }
+            $.ajax({
+                type: "POST",
+                contentType:"application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=signin",
+                data: JSON.stringify(signin),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function sendActivationCode()
+        {
+            var sendCode = {
+                "method": "sendActivationCode",
+                "phone": "13678162515"
+            }
+            $.ajax({
+                type: "POST",
+                contentType:"application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=sendActivationCode",
+                data: JSON.stringify(sendCode),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function checkUserNameDuplicated() {
+            var userDup = {
+                "userName": "liutao"
+            }
+            $.ajax({
+                type: "POST",
+                contentType:"application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=checkUserNameDuplicated",
+                data: JSON.stringify(userDup),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+
+        function checkPhoneDuplicated() {
+            var phoneDup = {
+                "phone": "12345678901"
+            }
+            $.ajax({
+                type: "POST",
+                contentType:"application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=checkPhoneDuplicated",
+                data: JSON.stringify(phoneDup),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        //过滤条件
+        function eventFilter() {
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=eventFilter",
+                data: {},
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function events()
+        {
+            var event={
+                "status": "1",
+                "eventFilter": "ALL",
+                "location": "成都市",
+                "currentPage": 1,
+                "limit": 30
+            }
+            $.ajax({
+                type: "POST",
+                contentType:"application/json",
+                url: " /API/FEservice.ashx?method=events",
+                data: JSON.stringify(event),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventDetails()
+        {
+            var eventD =
+                {
+                    "id": "A316D19BFFE344FD9DEE68798BE40024"
+                }
+
+            $.ajax({
+                type: "POST",
+                contentType:"application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=eventDetails",
+                data: JSON.stringify(eventD),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        //
+        function fetchMyData() {
+            var reqdata={ "userId": "city02" }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=fetchMyData",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function updateBGImage()
+        {
+            var reqdata = { "userId": "city02", "ImageUrl": "http://img1.imgtn.bdimg.com/it/u=2370644109,103663138&fm=11&gp=0.jpg" }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=updateBGImage",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        //赛事评论
+        function eventComments()
+        {
+            var reqdata = { "id": "C0F4E6E1DC724C7EB500961C15931703", "userid": "city02" }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=eventComments",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventSendComment()
+        {
+            $.ajax({
+                type: "POST",
+                url: " /API/FEservice.ashx?method=eventSendComment",
+                data: { eventId: "C0F4E6E1DC724C7EB500961C15931703", context:"打雷啦，下雨收衣服啦",userId:"city02"},
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventCommentLike()
+        {
+            var reqdata={ "id": "60","userId": "city02" };
+            $.ajax({
+                type: "POST",
+                contentType:"application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=eventCommentLike",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventDraw()
+        {
+            var reqdata={ "id": "C0F4E6E1DC724C7EB500961C15931703", "userId": "city02" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=eventDraw",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventSponsors()
+        {
+            var reqdata={ id: "C0F4E6E1DC724C7EB500961C15931703"};
+            $.ajax({
+                type: "POST",
+                contentType:"application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=eventSponsors",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventGroups()
+        {
+            var reqdata = { "eventId": "541AE7377CC343B5A6D2F23DAAB8EF74" };
+            $.ajax({
+                type: "POST",
+                contentType:"application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=eventGroups",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function registeredUsers()
+        {
+            var reqdata={ "itemId": "350" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=registeredUsers",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function fetchPartners()
+        {
+            var reqdata = { "userid": "city02" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: "/API/FEservice.ashx?method=fetchPartners",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function registerEvent()
+        {
+            var reqdata={ "itemId": "350", "id": "12", "gender": "", "name": "", "phone": "", "personCard": "", "partnerId": "13" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: "/API/FEservice.ashx?method=registerEvent",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventFollow()
+        {
+            var reqdata={ "id": "350","userId":"city02" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: "/API/FEservice.ashx?method=eventFollow",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventDrawTable()
+        {
+            var reqdata = { "itemId": "353", "round": "3" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: "/API/FEservice.ashx?method=eventDrawTable",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventDrawTableKnockOut() {
+            var reqdata = { "itemId": "353", "round": "3" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: "/API/FEservice.ashx?method=eventDrawTable",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function cascadeFilter()
+        {
+            var reqdata = { "id": "05E7E03727BD4B5294A481E023AA2023",type:"event" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: "/API/FEservice.ashx?method=cascadeFilter",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function fetchEventDrawResult()
+        {
+            var reqdata = { "matchId": "77F4B3AE40F547FEA0C48F2B6B48BE41" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: "/API/FEservice.ashx?method=eventMatchInfo",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventMatchTechnicalStatistics() {
+            var reqdata = { "matchId": "77F4B3AE40F547FEA0C48F2B6B48BE41" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: "/API/FEservice.ashx?method=eventMatchTechnicalStatistics",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventScheduleFilter()
+        {
+            var reqdata = { "id": "57133082-EEF8-45C4-9690-8FA10310C7F8", type: "eventScheduleFilter" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                //url: "/API/FEservice.ashx?method=eventScheduleFilter",
+                url: "/API/FEservice.ashx?method=cascadeFilter",
+                data:JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventSchedule()
+        {
+            var reqdata = { "eventId": "05E7E03727BD4B5294A481E023AA2023", "date": "2016-09-17", "location": "56" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: "/API/FEservice.ashx?method=eventSchedule",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventResult()
+        {
+            var reqdata = { "eventId": "05E7E03727BD4B5294A481E023AA2023", "date": "2016-09-17", "location": "56" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: "/API/FEservice.ashx?method=eventSchedule",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function eventNotices()
+        {
+            $.ajax({
+                type: "POST",
+                url: "/API/FEservice.ashx?method=eventNotices",
+                data: { id: "57133082-EEF8-45C4-9690-8FA10310C7F8" },
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function rankingFilter()
+        {
+            var reqdata = { "type": "rankings" };
+            $.ajax({
+                type: "POST",
+                contentType:"application/json;char-set:utf-8",
+                url: "/API/FEservice.ashx?method=cascadeFilter",
+                data:JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function rankings()
+        {
+            var reqdata={ "rankId": "union1", "value": "201","currentPage":"1","limit":"10" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set:utf-8",
+                url: "/API/FEservice.ashx?method=rankings",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+        //2016-8-13
+        //更新个人信息
+        //前端通过ajax传递参数到后端
+        //关键是content-type以及对json数据的stringify()
+        function updateMySettings()
+        {
+            var mysettings={
+                "userId": "city02 ",
+                "name": "liutao",
+                "email": "team@qq.com",
+                "gender": "male",
+                "birthday": "1984-11-13",
+                "Rank": "优秀",
+                "TechRank": 4.5,
+                "SelfTechRank": 4,
+                "OtherTechRank": 5,
+                "startYear": 2008,
+                "hand": 1,
+                "habit": 1,
+                "height": 160,
+                "weight": 50,
+                "phone": "13678162515",
+                "cardId": "51060219861230549X",
+                "address": [
+                  {
+                      "name": "A",
+                      "phone": "12312341231",
+                      "district": "四川省 成都市 锦江区",
+                      "detailAddress": "我不告诉你",
+                      "post": "110026"
+                  },
+                  {
+                      "name": "B",
+                      "phone": "12312341232",
+                      "district": "四川省 成都市 锦江区",
+                      "detailAddress": "我不告诉你",
+                      "post": "110026"
+                  },
+                  {
+                      "name": "C",
+                      "phone": 333333333,
+                      "district": "四川省 成都市 锦江区",
+                      "detailAddress": "我不告诉你",
+                      "post": "110026"
+                  }
+                ]
+            };
+            alert(JSON.stringify(mysettings));
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",   //内容类型
+                dataType: "json",     //类型
+                url: "/API/FEservice.ashx?method=updateMySettings",
+                data: JSON.stringify(mysettings),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function fetchMySettings()
+        {
+            var data={userId:"city02"}
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",   //内容类型
+                url: "/API/FEservice.ashx?method=fetchMySettings",
+                data: JSON.stringify(data),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function fetchMyMatch()
+        {
+            var data = { userId: "city02" }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",   //内容类型
+                url: "/API/FEservice.ashx?method=fetchMyMatch",
+                data: JSON.stringify(data),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function fetchMyPractice() {
+            var data = { userId: "city02" }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",   //内容类型
+                url: "/API/FEservice.ashx?method=fetchMyPractice",
+                data: JSON.stringify(data),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function resetPassword()
+        {
+            //
+            var reset={
+                "method":"resetPassword",
+                "phone":"13678162515",
+                "activationCode":"6156",
+                "password":"liutao1230"
+            }
+            var a = JSON.stringify(reset);
+            alert(a);
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",   //内容类型
+                dataType: "json",     //类型
+                url: "/API/FEservice.ashx?method=resetPassword",
+                data: JSON.stringify(reset),
+                success: function (ret)
+                {
+
+                }
+            });
+        }
+
+        function fetchUserInfo()
+        {
+            var reqdata = {
+                "method": "fetchUserInfo",
+                "userId": "city02"
+            }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                dataType:"json",
+                url: "/API/FEservice.ashx?method=fetchUserInfo",
+                data: JSON.stringify(reqdata),
+                success: function (ret)
+                {
+                    alert(JSON.stringify(ret));
+                }
+            });
+
+        }
+
+        function uploadImage()
+        {
+            var reqdata = {
+                "imgstr": "data:image/png;base64,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",
+                "name": "123.jpg"
+            }
+            $.ajax({
+                type: "POST",
+                //contentType: "application/x-www-form-urlencoded",
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                url: "/API/FEservice.ashx?method=uploadImage",
+                data: JSON.stringify(reqdata),
+                success: function (ret) {
+                    alert(JSON.stringify(ret));
+                }
+            });
+        }
+
+        //评论相关，2016-9-1
+        function fetchComments() {
+            var reqdata = { "id": "DA05BA8E06BB410F9B86ACC14100E6F2", "userid": "city02", "type": "event" }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=fetchComments",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function sendComment() {
+            var reqdata = {
+                "userId": "city02",
+                "id": "DA05BA8E06BB410F9B86ACC14100E6F2",
+                "type": "event",
+                "content": "打雷啦，下雨啦，收衣服啦。"
+            }
+            $.ajax({
+                type: "POST",
+                contentType:"application/json;charset=utf-8",
+                url: " /API/FEservice.ashx?method=sendComment",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function likeComment() {
+            var reqdata = { "id": "100", "userId": "city02","type":"event" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=eventCommentLike",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function addEquipment() {
+            var reqdata = {
+                "imgUrl": "http://img5.imgtn.bdimg.com/it/u=4008202820,2892448099&fm=21&gp=0.jpg",
+                "logo": "阿迪王",
+                "size": 34,
+                "price": 123
+            };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=addEquipment",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function editEquipment() {
+            var reqdata = {
+                "id":" 67",
+                "imgUrl": "http://img5.imgtn.bdimg.com/it/u=4008202820,2892448099&fm=21&gp=0.jpg",
+                "logo": "臭屁匠",
+                "size": 34,
+                "price": 123
+            };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=editEquipment",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function deleteEquipment() {
+            var reqdata = {
+                "id":"66"
+            };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=deleteEquipment",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function fetchProgram() {
+            var reqdata = {
+                "eventId": "51D04188E1174A1ABC44EA698F65F906",
+                "date": "2016-10-16"
+            };
+
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=fetchProgram",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        //修改赛程
+        function updateProgram()
+        {
+            var reqdata =
+                {
+                    "courts": [
+                              {
+                                  "id": "134",
+                                  "matches": ["6958E525CFFD4EE980DC3CA7C8F76B49", "36C8DE9F4B6F4808BA9447D525320DC0", "E0358FC6CFE54340A092BEF9E8CB90CA", "8FB43D100F5C417090525BA419064FB3", "B2B4D2046E6443538CA92D74D56CCA3C", "54C4728781594A59B71E6A8692092B4B", "36F030458C474AF4B0AA92C96FF03ADA", "86B2BDB836344779B73A51B808131944", "FD29944BCAB9452E904137EFDC09EBD3", "5A1776A17C394463884E35B67F246FDB", "452E66C954AC416ABF1EE673CA0A0F56"]
+                              },
+                               {
+                                   "id": "135",
+                                   "matches": ["1A0693AEDE734174A3A5D1F85868092D", "C4E1583FB0F94886906F284CB663F16E", "7705283C00934B4A8E0A851C5F7C76FA", "15841318FF50478DB7CAB354B5B59203", "F5F7AFE4990B4F4B8A875726EEED81C7", "3BB19714BD394335A9363A4AAEC20D14", "ABF12C4518364CF5B253CD5383D9A5EF", "96E8678B1A4346098171B52F661E72C7", "0E9569E74631409BB2140D1D041CDCF3", "47FF5E803F864979940013877D74C844", "9EE29BCC29AB4A089B13E2846FE24B27"]
+                               }
+                    ]
+                };
+
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=updateProgram",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function rankingDetailsInfo()
+        {
+            var reqdata = {
+                "userId": "city02",
+                "rankId":"union1"
+            }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=rankingDetailsInfo",
+                data: JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function rankingTypeFilter() {
+           
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=rankingTypeFilter",
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        //group tour apply
+        function registerTeam()
+        {
+            var reqdata =  {
+                    "groupId": "fce52cc9c5524df1948dfa605a912804",
+                    "name": "精英组",
+                    "coachName": "教练名",
+                    "members": [{
+                        "name": "陈韵竹",
+                        "gender": "女",
+                        "identityCard": "xxx",
+                        "identity": "xxx",
+                        "isBench": true
+                    },
+                    {
+                        "name": "陈韵竹",
+                        "gender": "女",
+                        "identityCard": "xxx",
+                        "identity": "xxx",
+                        "isBench": true
+                    }]
+                }
+
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=registerTeam",
+                data:JSON.stringify(reqdata),
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function fetchRegisteredTeams()
+        {
+            $.ajax({
+                type: "POST",
+                contentType: "application/json;char-set=utf-8",
+                url: " /API/FEservice.ashx?method=fetchRegisteredTeams",
+                data: '{"eventId":"541AE7377CC343B5A6D2F23DAAB8EF74"}',
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function fetchRegisteredTeamMembers()
+        {
+            $.ajax({
+                type: 'post',
+                contentType:'application/json',
+                url: '/API/FEservice.ashx?method=fetchRegisteredTeamMembers',
+                data: '{"eventId":"541AE7377CC343B5A6D2F23DAAB8EF74"}',
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function fetchRegisteredTeamSequence()
+        {
+            $.ajax({
+                type: 'post',
+                contentType: 'application/json',
+                url: '/API/FEservice.ashx?method=fetchRegisteredTeamSequence',
+                data: '{"eventId":"541AE7377CC343B5A6D2F23DAAB8EF74"}',
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function updateRegisteredTeamSequence()
+        {
+            $.ajax({
+                type: 'post',
+                contentType: 'application/json',
+                url: '/API/FEservice.ashx?method=updateRegisteredTeamSequence',
+                data: '{"eventId":"541AE7377CC343B5A6D2F23DAAB8EF74"}',
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        }
+    </script>
+    <style>
+        .post {
+            background-color: #4cff00;
+        }
+
+        .red {
+            color: red;
+        }
+
+        p {
+            font-size: small;
+        }
+    </style>
+
+</head>
+<body>
+    <p>Hi,All</p>
+    <p>green button means "contentType=application/json"</p>
+    <h3>用户</h3>
+    <input type="button" class="post" value="1注册" onclick="signup()" />
+    <input type="button" class="post" value="2登陆" onclick="signin()" />
+    <input type="button" class="post" value="3发送验证码" onclick="sendActivationCode()" />
+    <input type="button" class="post" value="4验证用户名" onclick="checkUserNameDuplicated()" />
+    <input type="button" class="post" value="5验证电话号码" onclick="checkPhoneDuplicated()" />
+    <input type="button" class="post" value="6重置密码" onclick="resetPassword()" />
+    <input type="button" class="post" value="7读取个人信息" onclick="fetchUserInfo()" />
+
+    <h3>赛事列表</h3>
+    <input type="button" class="post" value="1赛事过滤" onclick="eventFilter()" />
+    <input type="button" class="post" value="2赛事列表" onclick="events()" />
+    <input type="button" class="post" value="3赛事详情" onclick="eventDetails()" />
+    <input type="button" class="post" value="4赛事评论" onclick="eventComments()" />
+    <input type="button" value="5发表评论" onclick="eventSendComment()" />
+    <input type="button" class="post" value="6对评论点赞" onclick="eventCommentLike()" />
+    <input type="button" class="post" value="7签表请求" onclick="eventDraw()" />
+    <input type="button" class="post" value="9赞助商信息" onclick="eventSponsors()" />
+    <input type="button" class="post" value="10关注赛事" onclick="eventFollow()" />
+    <input type="button" class="post" value="11赛事签表-小组赛" onclick="eventDrawTable()" />
+    <input type="button" class="post" value="12赛事签表-淘汰赛" onclick="eventDrawTableKnockOut()" />
+    <input type="button" class="post" value="13获取赛程过滤条件" onclick="eventScheduleFilter()" />
+    <input type="button" class="post" value="14获取赛程列表" onclick="eventSchedule()" />
+    <input type="button" value="15赛事消息Aug8" onclick="eventNotices()" />
+    <input type="button" class="post" value="16签表过滤条件" onclick="cascadeFilter()" />
+    <input type="button" class="post" value="17比赛详情" onclick="fetchEventDrawResult()" />
+    <input type="button" class="post" value="18获取比赛详情技术统计" onclick="eventMatchTechnicalStatistics()" />
+
+    <h3>报名信息</h3>
+    <input type="button" class="post" value="1获取所有组别及其项目" onclick="eventGroups()" />
+    <input type="button" class="post" value="2获取该项目最新报名人员" onclick="registeredUsers()" />
+    <input type="button" class="post" value="3双打时选择搭档名单" onclick="fetchPartners()" />
+    <input type="button" class="post" value="4提交报名信息" onclick="registerEvent()" />
+    <input type="button" class="post" value="5团体报名" onclick="registerTeam()" />
+    <input type="button" class="post" value="6获取报名团队信息" onclick="fetchRegisteredTeams()" />
+    <input type="button" class="post" value="7根据赛事id和登陆人员获取团队成员" onclick="fetchRegisteredTeamMembers()" />
+    <input type="button" class="post" value="8获取团队成员顺序" onclick="fetchRegisteredTeamSequence()" />
+    <input type="button" class="post" value="9修改团队成员顺序" onclick="updateRegisteredTeamSequence()" />
+    <h3>竞猜</h3>
+    放在赛事之后，ranking之前
+
+    <h3>我</h3>
+    <input type="button" class="post" value="我的主页" onclick="fetchMyData()" />
+    <input type="button" class="post" value="更新个人信息" onclick="updateMySettings()" />
+    <input type="button" class="post" value="拉取个人设置信息" onclick="fetchMySettings()" />
+    <input type="button" class="post" value="拉取我的比赛信息1" onclick="fetchMyMatch()" />
+    <input type="button" class="post" value="拉取我的约球信息" onclick="fetchMyPractice()" />
+    <input type="button" class="post" value="更新背景图片" onclick="updateBGImage()" />
+    <input type="button" class="post" value="添加个人装备" onclick="addEquipment()" />
+    <input type="button" class="post" value="编辑个人装备" onclick="editEquipment()" />
+    <input type="button" class="post" value="删除个人装备" onclick="deleteEquipment()" />
+
+
+    <h3>排名相关的API</h3>
+    <input type="button" class="post" value="获取排名选项" onclick="rankingFilter()" />
+    <input type="button" class="post" value="获取排名" onclick="rankings()" />
+    <input type="button" class="post" value="获取详细信息" onclick="rankingDetailsInfo()" />
+    <input type="button" class="post" value="获取排名类型" onclick="rankingTypeFilter()" />
+
+
+    <h3>时光</h3>
+    <input type="button" value="上传图片" onclick="uploadImage()" />
+
+    <h3>评论相关的API</h3>
+    <input type="button" class="post" value="获取评论" onclick="fetchComments()" />
+    <input type="button" class="post" value="发表评论" onclick="sendComment()" />
+    <input type="button" class="post" value="对评论点赞" onclick="likeComment()" />
+
+    <h3>赛程调整</h3>
+    <input type="button" class="post" value="获取赛程" onclick="fetchProgram()" />
+    <input type="button" class="post" value="更新赛程" onclick="updateProgram()" />
+</body>
+</html>

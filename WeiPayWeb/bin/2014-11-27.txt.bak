@@ -1,0 +1,248 @@
+﻿2014-11-27 9:33:40     Send 页面  code：0119ae28f6cf756aa92d40d116cfd6fk
+
+2014-11-27 9:33:40     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7lYaoOVW-ScEQOpCZjtneb8NdrMVdJ0zQJaRx-KdoF6YJIIYO-xm3spwhffwU2G_X-PfN-aUGaTniq3BqR3Cu2A","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7Lu3m8E2K-laaINx1uT4KfqqpViP7hOG7Az3waJ6asmKbOdmDRwVMjPG0OoWp0ggdGMoDqmVPUgXv2SEMeivLig","openid":"o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0","scope":"snsapi_base"}
+
+2014-11-27 9:33:40     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7lYaoOVW-ScEQOpCZjtneb8NdrMVdJ0zQJaRx-KdoF6YJIIYO-xm3spwhffwU2G_X-PfN-aUGaTniq3BqR3Cu2A
+
+2014-11-27 9:33:40     Send 页面  openid=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:33:40     Send 页面  returnStr：{"errcode":48001,"errmsg":"api unauthorized"}
+
+2014-11-27 9:33:45     ============ 单次支付开始 ===============
+
+2014-11-27 9:33:45     传递支付参数：OrderSN=20141127093340、Body=商品描述、TotalFee=1、Attach=自定义数据、ProductId=12、UserOpenId=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:33:45     WeiPay 页面  sign：CC61CAE6CCBDC21844A180C29578D111
+
+2014-11-27 9:33:45     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[CC61CAE6CCBDC21844A180C29578D111]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee>1</total_fee><openid><![CDATA[o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0]]></openid><out_trade_no><![CDATA[20141127093340]]></out_trade_no><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述]]></body><nonce_str><![CDATA[67e103b0761e60683e83c559be18d40c]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 9:33:47     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[g5AeOguGwneQtAwZ]]></nonce_str>
+<sign><![CDATA[15D8F16EAE7347ABAE2FEB0373FE7702]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20141127093400dc1b6d75ff0035862537]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 9:33:47     WeiPay 页面  package：prepay_id=wx20141127093400dc1b6d75ff0035862537
+
+2014-11-27 9:33:47     WeiPay 页面  paySign：720E92AB8489816656D2A2E7E03CCB06
+
+2014-11-27 9:34:09     ============ 单次支付开始 ===============
+
+2014-11-27 9:34:09     传递支付参数：OrderSN=20141127093340、Body=商品描述反反复复、TotalFee=16、Attach=自定义数据、ProductId=12、UserOpenId=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:34:09     WeiPay 页面  sign：9C3104136742D5A4BD7A7E09E7F817FC
+
+2014-11-27 9:34:09     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[9C3104136742D5A4BD7A7E09E7F817FC]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee><![CDATA[16]]></total_fee><openid><![CDATA[o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0]]></openid><out_trade_no><![CDATA[20141127093340]]></out_trade_no><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述反反复复]]></body><nonce_str><![CDATA[da4fb5c6e93e74d3df8527599fa62642]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 9:34:10     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[YwyGrnT1Wb0pngYc]]></nonce_str>
+<sign><![CDATA[1DE0027E529DFF05D422B5DE807E26C9]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[OUT_TRADE_NO_USED]]></err_code>
+<err_code_des><![CDATA[商户订单号重复]]></err_code_des>
+</xml>
+
+2014-11-27 9:34:10     WeiPay 页面  package：prepay_id=OUT_TRADE_NO_USED
+
+2014-11-27 9:34:10     WeiPay 页面  paySign：08078D80705FF6FBC1C22A6E8D99F5F0
+
+2014-11-27 9:34:29     Send 页面  code：001504216cc8537c24a8ff4abfdc38fO
+
+2014-11-27 9:34:29     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7qjvui_Kv1FKecuzzzFxtREyV-C638_JxYuWI91ZDDEFd3oojBzGEM9UU99LbI5a7ocxNfaAXitt5c7XDa0NZMA","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7l2aNnrF4TMCv_zbdn5j8JnBUJwHoBsE7TO6QWjebvm_-r2jyKUSYDeEun2ZOoBbmXCA4PK0OUmu-GVesFziRxQ","openid":"o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0","scope":"snsapi_base"}
+
+2014-11-27 9:34:29     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7qjvui_Kv1FKecuzzzFxtREyV-C638_JxYuWI91ZDDEFd3oojBzGEM9UU99LbI5a7ocxNfaAXitt5c7XDa0NZMA
+
+2014-11-27 9:34:29     Send 页面  openid=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:34:29     Send 页面  returnStr：{"errcode":48001,"errmsg":"api unauthorized"}
+
+2014-11-27 9:34:36     ============ 单次支付开始 ===============
+
+2014-11-27 9:34:36     传递支付参数：OrderSN=20141127093429、Body=商品描述到达、TotalFee=1、Attach=自定义数据、ProductId=12、UserOpenId=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:34:36     WeiPay 页面  sign：9A35BC2334FFFBD04075C7F1DB142B59
+
+2014-11-27 9:34:36     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[9A35BC2334FFFBD04075C7F1DB142B59]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee>1</total_fee><openid><![CDATA[o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0]]></openid><out_trade_no><![CDATA[20141127093429]]></out_trade_no><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述到达]]></body><nonce_str><![CDATA[704afe073992cbe4813cae2f7715336f]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 9:34:37     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[kKVfCCfKa3CMRMgr]]></nonce_str>
+<sign><![CDATA[BD10FD34752805EE7B7ACBA499233083]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx2014112709345196fe956c540618724032]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 9:34:37     WeiPay 页面  package：prepay_id=wx2014112709345196fe956c540618724032
+
+2014-11-27 9:34:37     WeiPay 页面  paySign：6C35D3BCADB2005934B9A8A465B0B076
+
+2014-11-27 9:34:50     Send 页面  code：001e157a5a8885703477308c296fad5z
+
+2014-11-27 9:34:50     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7Qz7yLJ2nucBu2f3EE0GdaYItEW6Guvtuqka4znFRnMP53wuDQmYY0-D4GSEKWNAlpGdh-URmJVG4SPBjD9Tc1Q","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7MDDznI0xkEgsgkwvGHnHaTcFdzjJLhtfaBm5WS0v5wpFtOnY0VywTbLfda0_iMvkME6w4_mzdB2WtCTTFFiOfQ","openid":"o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0","scope":"snsapi_base"}
+
+2014-11-27 9:34:50     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7Qz7yLJ2nucBu2f3EE0GdaYItEW6Guvtuqka4znFRnMP53wuDQmYY0-D4GSEKWNAlpGdh-URmJVG4SPBjD9Tc1Q
+
+2014-11-27 9:34:50     Send 页面  openid=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:34:51     Send 页面  returnStr：{"errcode":48001,"errmsg":"api unauthorized"}
+
+2014-11-27 9:35:00     ============ 单次支付开始 ===============
+
+2014-11-27 9:35:00     传递支付参数：OrderSN=20141127093450、Body=商品描述烦烦烦、TotalFee=14、Attach=自定义数据、ProductId=12、UserOpenId=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:35:00     WeiPay 页面  sign：1ED29AA1BFA7E045F66163E271BDE90E
+
+2014-11-27 9:35:00     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[1ED29AA1BFA7E045F66163E271BDE90E]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee><![CDATA[14]]></total_fee><openid><![CDATA[o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0]]></openid><out_trade_no><![CDATA[20141127093450]]></out_trade_no><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述烦烦烦]]></body><nonce_str><![CDATA[a8849b052492b5106526b2331e526138]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 9:35:00     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[l6DO7SdKd5XGxl1M]]></nonce_str>
+<sign><![CDATA[460C66C108A31CE0759AE9FBFAC2B8C8]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20141127093515b7666dac320001280209]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 9:35:00     WeiPay 页面  package：prepay_id=wx20141127093515b7666dac320001280209
+
+2014-11-27 9:35:00     WeiPay 页面  paySign：7DD1C589028B2F4269B9760E024B99B8
+
+2014-11-27 9:39:52     Send 页面  code：021eb36512431492f32fdf6c5694a61v
+
+2014-11-27 9:39:52     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7Zhib6BvP1n3dYCkf3Sx7YAZFMYaNgIuf-PyvWJwj2u7o9BkRPcshbfU8c6Zl7MdXIuYiM21glOxDhIRPDFEzwQ","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j79J4chi_JuymTFkAUkIKgXEPHu-o5jyvztvvthtfJ35dmI7DCkCtxT-utV9ZasAtu_SsTMUDjgdvz0Y7JolTG0Q","openid":"o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0","scope":"snsapi_base"}
+
+2014-11-27 9:39:52     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7Zhib6BvP1n3dYCkf3Sx7YAZFMYaNgIuf-PyvWJwj2u7o9BkRPcshbfU8c6Zl7MdXIuYiM21glOxDhIRPDFEzwQ
+
+2014-11-27 9:39:52     Send 页面  openid=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:39:52     Send 页面  returnStr：{"errcode":48001,"errmsg":"api unauthorized"}
+
+2014-11-27 9:39:57     ============ 单次支付开始 ===============
+
+2014-11-27 9:41:23     Send 页面  code：0217e6f66c09a342d8f7c861a6166b3B
+
+2014-11-27 9:41:23     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7d0Mys7Hi1oQp1xU10Vb0zAiveBpB7CAH38Rgyv7lSGh-pGZPsCsGBrMCVgRLFcW413KHBCc4Vk-DNEl7zmrcGA","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7hfoK28HqZMoerXU5lCOeD_W2qSnYY3CbJtTNdpQbArRI5NBdsGytQz2rKedx0SFqcnuhG14jUWTGaSu4g62EEw","openid":"o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0","scope":"snsapi_base"}
+
+2014-11-27 9:41:23     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7d0Mys7Hi1oQp1xU10Vb0zAiveBpB7CAH38Rgyv7lSGh-pGZPsCsGBrMCVgRLFcW413KHBCc4Vk-DNEl7zmrcGA
+
+2014-11-27 9:41:23     Send 页面  openid=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:41:23     Send 页面  returnStr：{"errcode":48001,"errmsg":"api unauthorized"}
+
+2014-11-27 9:41:28     ============ 单次支付开始 ===============
+
+2014-11-27 9:41:28     传递支付参数：OrderSN=20141127094123、Body=商品描述、TotalFee=1、Attach=自定义数据、UserOpenId=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:41:28     WeiPay 页面  sign：257FB5D98AF5E3454DC68105B354F1E7
+
+2014-11-27 9:41:28     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[257FB5D98AF5E3454DC68105B354F1E7]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee>1</total_fee><openid><![CDATA[o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0]]></openid><out_trade_no><![CDATA[20141127094123]]></out_trade_no><attach><![CDATA[自定义数据]]></attach><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述]]></body><nonce_str><![CDATA[ef4e3b775c934dada217712d76f3d51f]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 9:41:29     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[r5IuQUQDbdSpSIh0]]></nonce_str>
+<sign><![CDATA[0EBAB84ACF43D59808E46D8B14EDA7E5]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx2014112709414340ebc32d150205880641]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 9:41:29     WeiPay 页面  package：prepay_id=wx2014112709414340ebc32d150205880641
+
+2014-11-27 9:41:29     WeiPay 页面  paySign：247398BA3F3E8BEDDFA70845A86DC548
+
+2014-11-27 9:42:46     Send 页面  code：00157f1d5a8d68b9f3817c0ec47f193D
+
+2014-11-27 9:42:46     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7yLN6I28SFG7_lc59KoQ7sM2-n4X08NyVHxXl5XqXMUwosz3ZNsIoMiTDkEoVQuPKnno2DFDtV9Ic9dqyTz_gQA","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7LsB5WqaEgV_ERgeUupxdoh7Ri8lsYbc6J0vFheDPfgrm4dnMiYn2GY7ViUu2o1a3o38cFWlG5ziClTfVYaiq1g","openid":"o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0","scope":"snsapi_base"}
+
+2014-11-27 9:42:46     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7yLN6I28SFG7_lc59KoQ7sM2-n4X08NyVHxXl5XqXMUwosz3ZNsIoMiTDkEoVQuPKnno2DFDtV9Ic9dqyTz_gQA
+
+2014-11-27 9:42:46     Send 页面  openid=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:42:46     Send 页面  returnStr：{"errcode":48001,"errmsg":"api unauthorized"}
+
+2014-11-27 9:44:09     Send 页面  code：0213e56dfff79bad4ce9bb53ca30c8ah
+
+2014-11-27 9:44:09     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j75YaY6EkozWrZuxQTjQe3rt1wNrZdRCADR7mfB6QUwTM-FOUy_f2emCp1AEzFI25NqPl1uoW8b5-T9AqABbIuEQ","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j7hYidRRKE0Bu-owuKolWlIlpGHRPsac3Io7IAkMetJiqJaylaB-L3wwosdjIvaaqgZR7Cqgf0-oVcYEp8ASdiRQ","openid":"o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0","scope":"snsapi_base"}
+
+2014-11-27 9:44:09     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mS1B8WigCVkulXy3liHg6j75YaY6EkozWrZuxQTjQe3rt1wNrZdRCADR7mfB6QUwTM-FOUy_f2emCp1AEzFI25NqPl1uoW8b5-T9AqABbIuEQ
+
+2014-11-27 9:44:09     Send 页面  openid=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:44:09     Send 页面  returnStr：{"errcode":48001,"errmsg":"api unauthorized"}
+
+2014-11-27 9:44:15     ============ 单次支付开始 ===============
+
+2014-11-27 9:44:15     传递支付参数：OrderSN=20141127094409、Body=商品描述、TotalFee=1、Attach=自定义数据、UserOpenId=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:44:15     WeiPay 页面  sign：FDB21652F879A211E05BE5765F260D0F
+
+2014-11-27 9:44:15     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[FDB21652F879A211E05BE5765F260D0F]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee>1</total_fee><openid><![CDATA[o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0]]></openid><out_trade_no><![CDATA[20141127094409]]></out_trade_no><attach><![CDATA[自定义数据]]></attach><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述]]></body><nonce_str><![CDATA[a5771bce93e200c36f7cd9dfd0e5deaa]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 9:44:16     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[vFVklw1yxgFMAL7X]]></nonce_str>
+<sign><![CDATA[5FAC13CFC8343F07F64C3C0DB65335F2]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20141127094430b2919c38dc0349655893]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 9:44:16     WeiPay 页面  package：prepay_id=wx20141127094430b2919c38dc0349655893
+
+2014-11-27 9:44:16     WeiPay 页面  paySign：5120711BFB78057ABA46F4A0BD60638F
+
+2014-11-27 9:45:24     Send 页面  code：00154af4a4d4bf44b7efb140f82a942d
+
+2014-11-27 9:45:24     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6z0magrkmrFIDS9tj6YxMuRk76nx7EoLOXaq2d1fKhgUHIN8XS5ZByI1cb1tF4fgq9T8Ka2w1x4uFpVd8rEQB1g","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6otHwLlPeCfoFeRi-Yxpq5kdTP_XpOhTvLOpx_nFRsfIZODk8P6hAbj7ROWpcQpX3gnHvVkyt6xg_BoYUPpKPeQ","openid":"o_Y0JjwaroEi9ynnsEI_no4d6u_U","scope":"snsapi_base"}
+
+2014-11-27 9:45:24     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6z0magrkmrFIDS9tj6YxMuRk76nx7EoLOXaq2d1fKhgUHIN8XS5ZByI1cb1tF4fgq9T8Ka2w1x4uFpVd8rEQB1g
+
+2014-11-27 9:45:24     Send 页面  openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U
+
+2014-11-27 9:45:24     Send 页面  returnStr：{"openid":"o_Y0JjwaroEi9ynnsEI_no4d6u_U","nickname":"Anson徐羽","sex":1,"language":"zh_CN","city":"Xuhui","province":"Shanghai","country":"CN","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/ibicqNAMptIoG18kMkSncGlZxpcpAP0CruBF3qBghDcMnn002YDib4ickf8UviaTnIenyq3orNE4FMTZkswfPK3EpuCC6XDp6vp9z\/0","privilege":[]}
+
+2014-11-27 9:45:34     ============ 单次支付开始 ===============
+
+2014-11-27 9:45:34     传递支付参数：OrderSN=20141127094524、Body=商品描述、TotalFee=1、Attach=自定义数据、UserOpenId=o_Y0JjwaroEi9ynnsEI_no4d6u_U
+
+2014-11-27 9:45:34     WeiPay 页面  sign：41EB6DBECE99D553184FB2050ADEEFCE
+
+2014-11-27 9:45:34     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[41EB6DBECE99D553184FB2050ADEEFCE]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee>1</total_fee><openid><![CDATA[o_Y0JjwaroEi9ynnsEI_no4d6u_U]]></openid><out_trade_no><![CDATA[20141127094524]]></out_trade_no><attach><![CDATA[自定义数据]]></attach><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述]]></body><nonce_str><![CDATA[64223ccf70bbb65a3a4aceac37e21016]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 9:45:34     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[vgTZS0Ctzrsh49SR]]></nonce_str>
+<sign><![CDATA[E987B410B928858C702254185DABFAA7]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx201411270945493940cd518d0484998943]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 9:45:34     WeiPay 页面  package：prepay_id=wx201411270945493940cd518d0484998943
+
+2014-11-27 9:45:34     WeiPay 页面  paySign：19DAC22F0F0B532857E0593AD0B4B052
+
+2014-11-27 9:46:14     Notify 页面  isWXsign= false ，错误信息：sign = C3177C55EE97E243AF216953BF2C420D
+ xmlMap[sign]=A116F6BB460508A7D6570649D5B85D53
+
+2014-11-27 9:46:14     ============ 单次支付结束 ===============
+

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F884EC11-5654-4FFA-99AF-DC646A961FD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ranking</RootNamespace>
+    <AssemblyName>Ranking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Biz\Biz_TourScore.cs" />
+    <Compile Include="Biz\DBHelperSQL.cs" />
+    <Compile Include="Biz\Fe_Biz_Ranking.cs" />
+    <Compile Include="Biz\JsonHelper.cs" />
+    <Compile Include="Biz\RankDll.cs" />
+    <Compile Include="Biz\RPointDll.cs" />
+    <Compile Include="Biz\WithDrawDll.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Model\Fe_Model_Ranking.cs" />
+    <Compile Include="Model\Model_UnionRank.cs" />
+    <Compile Include="Model\PointsModel.cs" />
+    <Compile Include="Model\RankModel.cs" />
+    <Compile Include="Model\WithDrawModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Description.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Club\Club.csproj">
+      <Project>{d9c592fc-ab95-4627-8bd9-6cc4a0ae6377}</Project>
+      <Name>Club</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Member\Member.csproj">
+      <Project>{12b3bc3b-df4d-47ec-adfa-6224c6653955}</Project>
+      <Name>Member</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeTour\WeTour.csproj">
+      <Project>{3477679A-7202-4790-B809-FBC67BC47487}</Project>
+      <Name>WeTour</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

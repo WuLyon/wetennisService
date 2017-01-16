@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A89423E4-70CE-4118-B69C-BE21E577AC4B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeTennisService</RootNamespace>
+    <AssemblyName>WeTennisService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.0.3.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Test\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\News.asmx" />
+    <Content Include="API\TestService.html" />
+    <Content Include="BackService\TestBackService.html" />
+    <Content Include="JSService\Tour.asmx" />
+    <Content Include="Test\Alogrithem.asmx" />
+    <Content Include="Test\APItest.html" />
+    <Content Include="Test\CommenMethod.js" />
+    <Content Include="Test\JavaScript1.js" />
+    <Content Include="Test\Newtonsoft.Json.dll" />
+    <Content Include="Test\TEST.aspx" />
+    <Content Include="Test\TestService.html" />
+    <Content Include="Test\jquery-1.8.2.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebService\DescHtml.asmx" />
+    <Content Include="WebService\PicUpload.aspx" />
+    <Content Include="WebService\WeTennisTime.asmx" />
+    <Content Include="WeTour.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\FEservice.ashx.cs">
+      <DependentUpon>FEservice.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\Model_Return.cs" />
+    <Compile Include="API\News.asmx.cs">
+      <DependentUpon>News.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="API\PayMent.ashx.cs">
+      <DependentUpon>PayMent.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BackService\AutoComp.ashx.cs">
+      <DependentUpon>AutoComp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BackService\System.ashx.cs">
+      <DependentUpon>System.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BackService\TourMgm.ashx.cs">
+      <DependentUpon>TourMgm.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BackService\TourMgmJson.ashx.cs">
+      <DependentUpon>TourMgmJson.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DBHelperSQL.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="JSService\Tour.asmx.cs">
+      <DependentUpon>Tour.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="MyExcelHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\Algorithm.cs" />
+    <Compile Include="Test\Alogrithem.asmx.cs">
+      <DependentUpon>Alogrithem.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Test\CRUDsqlstr.cs" />
+    <Compile Include="Test\TEST.aspx.cs">
+      <DependentUpon>TEST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\TEST.aspx.designer.cs">
+      <DependentUpon>TEST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\DescHtml.asmx.cs">
+      <DependentUpon>DescHtml.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\PicUpload.ashx.cs">
+      <DependentUpon>PicUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\PicUpload.aspx.cs">
+      <DependentUpon>PicUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebService\PicUpload.aspx.designer.cs">
+      <DependentUpon>PicUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\PicUpload2.ashx.cs">
+      <DependentUpon>PicUpload2.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\PicUploadBase.ashx.cs">
+      <DependentUpon>PicUploadBase.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\SMS.ashx.cs">
+      <DependentUpon>SMS.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\TourMgm.ashx.cs">
+      <DependentUpon>TourMgm.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WeBet.ashx.cs">
+      <DependentUpon>WeBet.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WeChat.ashx.cs">
+      <DependentUpon>WeChat.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WeClub.ashx.cs">
+      <DependentUpon>WeClub.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WeMember.ashx.cs">
+      <DependentUpon>WeMember.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WeNews.ashx.cs">
+      <DependentUpon>WeNews.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WeRank.ashx.cs">
+      <DependentUpon>WeRank.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WeTennisTime.asmx.cs">
+      <DependentUpon>WeTennisTime.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\WeTime.ashx.cs">
+      <DependentUpon>WeTime.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WeTour.ashx.cs">
+      <DependentUpon>WeTour.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WeUmpire.ashx.cs">
+      <DependentUpon>WeUmpire.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WeUnion.ashx.cs">
+      <DependentUpon>WeUnion.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WeChat\Para_wxconfig.cs" />
+    <Compile Include="WeChat\ReadTxt.cs" />
+    <Compile Include="WeChat\WeChatJDK.cs" />
+    <Compile Include="WeChat\zPublicClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BackService\TourMgm.ashx" />
+    <Content Include="BackService\AutoComp.ashx" />
+    <Content Include="BackService\System.ashx" />
+    <Content Include="API\FEservice.ashx" />
+    <Content Include="BackService\TourMgmJson.ashx" />
+    <Content Include="API\PayMent.ashx" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\VMCloud.pubxml" />
+    <None Include="Properties\PublishProfiles\WetennisApi.pubxml" />
+    <None Include="Properties\PublishProfiles\WetennisService.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WebService\WeTour.ashx" />
+    <Content Include="WebService\WeMember.ashx" />
+    <Content Include="WebService\WeNews.ashx" />
+    <Content Include="WebService\WeRank.ashx" />
+    <Content Include="WebService\WeUmpire.ashx" />
+    <Content Include="WebService\PicUpload.ashx" />
+    <Content Include="WebService\WeTime.ashx" />
+    <Content Include="WebService\PicUploadBase.ashx" />
+    <Content Include="WebService\WeBet.ashx" />
+    <Content Include="WebService\PicUpload2.ashx" />
+    <Content Include="WebService\WeChat.ashx" />
+    <Content Include="WebService\SMS.ashx" />
+    <Content Include="WebService\WeUnion.ashx" />
+    <Content Include="WebService\WeClub.ashx" />
+    <Content Include="WebService\TourMgm.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Basic\Basic.csproj">
+      <Project>{a46d9bac-8254-40c1-8d99-ad4a1ec76a8e}</Project>
+      <Name>Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bet\Bet.csproj">
+      <Project>{da441f70-ad20-471d-a62b-0de0eb353411}</Project>
+      <Name>Bet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Club\Club.csproj">
+      <Project>{d9c592fc-ab95-4627-8bd9-6cc4a0ae6377}</Project>
+      <Name>Club</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Equip\Equip.csproj">
+      <Project>{53a122c5-4016-422c-bce2-0a8eb3172f48}</Project>
+      <Name>Equip</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Member\Member.csproj">
+      <Project>{12b3bc3b-df4d-47ec-adfa-6224c6653955}</Project>
+      <Name>Member</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\News\News.csproj">
+      <Project>{a6a9a46b-e816-422b-8b22-4d00fd3809fa}</Project>
+      <Name>News</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrderLib\OrderLib.csproj">
+      <Project>{af6b43ea-41f6-4d6c-a755-b31c927b9f27}</Project>
+      <Name>OrderLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ranking\Ranking.csproj">
+      <Project>{f884ec11-5654-4ffa-99af-dc646a961fd5}</Project>
+      <Name>Ranking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS\SMS.csproj">
+      <Project>{88d0079f-a477-40de-aea4-9164b23f8ca5}</Project>
+      <Name>SMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Time\Time.csproj">
+      <Project>{7a5b63ca-636e-4daf-ba9d-f943b8fe964e}</Project>
+      <Name>Time</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Union\Union.csproj">
+      <Project>{b1a66307-5043-4327-91a7-6486802a3e95}</Project>
+      <Name>Union</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeChat\WeChat.csproj">
+      <Project>{ca055eb5-5ed5-4391-a998-866036003823}</Project>
+      <Name>WeChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeTour\WeTour.csproj">
+      <Project>{3477679a-7202-4790-b809-fbc67bc47487}</Project>
+      <Name>WeTour</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeUmpire\WeUmpire.csproj">
+      <Project>{e1f3f828-7178-45d2-8492-c473a282b0ef}</Project>
+      <Name>WeUmpire</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>46755</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:46755/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

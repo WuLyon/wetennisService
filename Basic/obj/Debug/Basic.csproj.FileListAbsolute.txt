@@ -1,0 +1,14 @@
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Basic\obj\Debug\Basic.csprojResolveAssemblyReference.cache
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Basic\bin\Debug\Basic.dll
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Basic\bin\Debug\Basic.pdb
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Basic\obj\Debug\Basic.dll
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Basic\obj\Debug\Basic.pdb
+F:\projects\WeTennis_backend_project\WetennisService\Basic\bin\Debug\Basic.dll
+F:\projects\WeTennis_backend_project\WetennisService\Basic\bin\Debug\Basic.pdb
+F:\projects\WeTennis_backend_project\WetennisService\Basic\obj\Debug\Basic.csprojResolveAssemblyReference.cache
+F:\projects\WeTennis_backend_project\WetennisService\Basic\obj\Debug\Basic.dll
+F:\projects\WeTennis_backend_project\WetennisService\Basic\obj\Debug\Basic.pdb
+F:\Wetennis2016\Basic\bin\Debug\Basic.dll
+F:\Wetennis2016\Basic\bin\Debug\Basic.pdb
+F:\Wetennis2016\Basic\obj\Debug\Basic.dll
+F:\Wetennis2016\Basic\obj\Debug\Basic.pdb

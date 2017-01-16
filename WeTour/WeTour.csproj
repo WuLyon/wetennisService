@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3477679A-7202-4790-B809-FBC67BC47487}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeTour</RootNamespace>
+    <AssemblyName>WeTour</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Biz\Biz_match_sequence.cs" />
+    <Compile Include="Biz\Biz_MyPractice.cs" />
+    <Compile Include="Biz\Biz_TourAdviser.cs" />
+    <Compile Include="Biz\Biz_TourContentScore.cs" />
+    <Compile Include="Biz\CourtResourceDll.cs" />
+    <Compile Include="Biz\weTeamdll.cs" />
+    <Compile Include="Biz\weTeamMemberdll.cs" />
+    <Compile Include="Bus\Biz_Time.cs" />
+    <Compile Include="Bus\Biz_ScheduleAdjust.cs" />
+    <Compile Include="Model\model_match_sequence.cs" />
+    <Compile Include="Model\TennisStats.cs" />
+    <Compile Include="Model\weTeamMemberModel.cs" />
+    <Compile Include="Model\weTeamModel.cs" />
+    <Compile Include="oldBiz\GameDll.cs" />
+    <Compile Include="oldBiz\MatchDll.cs" />
+    <Compile Include="oldBiz\PointsDll.cs" />
+    <Compile Include="oldBiz\SetDll.cs" />
+    <Compile Include="Dac\GameDac.cs" />
+    <Compile Include="Dac\MatchDac.cs" />
+    <Compile Include="Dac\MemberDac.cs" />
+    <Compile Include="Dac\MessageInfo.cs" />
+    <Compile Include="Dac\PlayerDac.cs" />
+    <Compile Include="Dac\PointsDac.cs" />
+    <Compile Include="Biz\ResCourt_DisStratagyDll.cs" />
+    <Compile Include="Biz\TourResDisDll.cs" />
+    <Compile Include="Biz\WeMatchDll.cs" />
+    <Compile Include="Biz\WeTourApplyDll.cs" />
+    <Compile Include="Biz\WeTourApplyFee.cs" />
+    <Compile Include="Biz\WeTourContentDll.cs" />
+    <Compile Include="Biz\WeTourDll.cs" />
+    <Compile Include="Biz\WeTourSeedDll.cs" />
+    <Compile Include="Biz\WeTourSignDll.cs" />
+    <Compile Include="Biz\WeTour_MyMatchs.cs" />
+    <Compile Include="Bus\Biz_TourDate.cs" />
+    <Compile Include="Bus\Biz_TourGyms.cs" />
+    <Compile Include="Bus\Biz_TourMgm.cs" />
+    <Compile Include="Bus\WeContentSignsDll.cs" />
+    <Compile Include="Bus\WeTourApplyPage.cs" />
+    <Compile Include="Bus\WeTourSceduleDll.cs" />
+    <Compile Include="Bus\WeTourSignMain.cs" />
+    <Compile Include="Bus\WeTourUmpireDll.cs" />
+    <Compile Include="Dac\SetDac.cs" />
+    <Compile Include="DBHelperSQL.cs" />
+    <Compile Include="Fe_Tour\Fe_Biz_TourList.cs" />
+    <Compile Include="Fe_Tour\Fe_Model_TourList.cs" />
+    <Compile Include="Model\MatchModel.cs" />
+    <Compile Include="Model\MemberModel.cs" />
+    <Compile Include="Model\PlayerModel.cs" />
+    <Compile Include="Model\SetModel.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="Model\CityInfo.cs" />
+    <Compile Include="Model\ContSignModel.cs" />
+    <Compile Include="Model\CourtResourceModel.cs" />
+    <Compile Include="Model\GameModel.cs" />
+    <Compile Include="Model\GroupModel.cs" />
+    <Compile Include="Model\Model_ApiTourList.cs" />
+    <Compile Include="Model\Model_CourtMatches.cs" />
+    <Compile Include="Model\Model_Point.cs" />
+    <Compile Include="Model\Model_SignMgm.cs" />
+    <Compile Include="Model\Model_TgmMatch.cs" />
+    <Compile Include="Model\Model_TourContScore.cs" />
+    <Compile Include="Model\Model_TourDate.cs" />
+    <Compile Include="Model\Model_TourGym.cs" />
+    <Compile Include="Model\Model_WeTourAdvertiser.cs" />
+    <Compile Include="Model\ResCourt_DisStratagyModel.cs" />
+    <Compile Include="Model\ResDate_ContentRoundModel.cs" />
+    <Compile Include="Model\ResTour_TourCourtModel.cs" />
+    <Compile Include="Model\ResTour_GymContentModel .cs" />
+    <Compile Include="Model\ResDate_TourDateModel .cs" />
+    <Compile Include="Model\ResTour_TourGymModel.cs" />
+    <Compile Include="Model\WeMatchModel.cs" />
+    <Compile Include="Model\WeTourApplyModel.cs" />
+    <Compile Include="Model\WeTourContModel.cs" />
+    <Compile Include="Model\WeTourModel.cs" />
+    <Compile Include="Model\WeTourResultModel.cs" />
+    <Compile Include="Model\WeTourScheduleModel.cs" />
+    <Compile Include="Model\WeTourSeedModel.cs" />
+    <Compile Include="Model\WeTourSignModel.cs" />
+    <Compile Include="oldBiz\MemberDll.cs" />
+    <Compile Include="oldBiz\PlayerDll.cs" />
+    <Compile Include="oldBiz\StatsDll.cs" />
+    <Compile Include="oldBiz\TrendDll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResDll\ResDateDll.cs" />
+    <Compile Include="ResDll\ResGymDll.cs" />
+    <Compile Include="ResDll\ResTourDistridll.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Club\Club.csproj">
+      <Project>{D9C592FC-AB95-4627-8BD9-6CC4A0AE6377}</Project>
+      <Name>Club</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gym\Gym.csproj">
+      <Project>{7B3CA5FE-2290-43AA-9572-04693EE43E0A}</Project>
+      <Name>Gym</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Member\Member.csproj">
+      <Project>{12B3BC3B-DF4D-47EC-ADFA-6224C6653955}</Project>
+      <Name>Member</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrderLib\OrderLib.csproj">
+      <Project>{AF6B43EA-41F6-4D6C-A755-B31C927B9F27}</Project>
+      <Name>OrderLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS\SMS.csproj">
+      <Project>{88D0079F-A477-40DE-AEA4-9164B23F8CA5}</Project>
+      <Name>SMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

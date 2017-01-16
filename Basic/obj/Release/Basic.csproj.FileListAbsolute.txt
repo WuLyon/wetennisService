@@ -1,0 +1,15 @@
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Basic\bin\Release\Basic.dll
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Basic\bin\Release\Basic.pdb
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Basic\obj\Release\Basic.csprojResolveAssemblyReference.cache
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Basic\obj\Release\Basic.dll
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Basic\obj\Release\Basic.pdb
+F:\projects\WeTennis_backend_project\WetennisService\Basic\bin\Release\Basic.dll
+F:\projects\WeTennis_backend_project\WetennisService\Basic\bin\Release\Basic.pdb
+F:\projects\WeTennis_backend_project\WetennisService\Basic\obj\Release\Basic.csprojResolveAssemblyReference.cache
+F:\projects\WeTennis_backend_project\WetennisService\Basic\obj\Release\Basic.dll
+F:\projects\WeTennis_backend_project\WetennisService\Basic\obj\Release\Basic.pdb
+F:\Wetennis2016\Basic\bin\Release\Basic.dll
+F:\Wetennis2016\Basic\bin\Release\Basic.pdb
+F:\Wetennis2016\Basic\obj\Release\Basic.csprojResolveAssemblyReference.cache
+F:\Wetennis2016\Basic\obj\Release\Basic.dll
+F:\Wetennis2016\Basic\obj\Release\Basic.pdb

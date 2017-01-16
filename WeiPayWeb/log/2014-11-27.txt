@@ -1,0 +1,23 @@
+﻿2014-11-27 9:10:07     ============ 单次支付开始 ===============
+
+2014-11-27 9:10:07     传递支付参数：OrderSN=20141127090938、Body=商品描述、TotalFee=1、Attach=自定义数据、ProductId=12、UserOpenId=o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0
+
+2014-11-27 9:10:07     WeiPay 页面  sign：CECB8C277D6F5EB9C5759D692C45F3A2
+
+2014-11-27 9:10:07     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[CECB8C277D6F5EB9C5759D692C45F3A2]]></sign><spbill_create_ip><![CDATA[127.0.0.1]]></spbill_create_ip><total_fee>1</total_fee><openid><![CDATA[o_Y0Jj8Pi8GNdA1w_GSPC6LwtCu0]]></openid><out_trade_no><![CDATA[20141127090938]]></out_trade_no><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述]]></body><nonce_str><![CDATA[b1eec33c726a60554bc78518d5f9b32c]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 9:10:10     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[hwVlaZsKQSgrCd55]]></nonce_str>
+<sign><![CDATA[C936EF9AC26C933C6AE9267EAF346E9B]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx201411270909576f9eb74e6e0074620160]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 9:10:10     WeiPay 页面  package：prepay_id=wx201411270909576f9eb74e6e0074620160
+
+2014-11-27 9:10:10     WeiPay 页面  paySign：01B6D4E73B7E3E2E8F4BC63560737983
+

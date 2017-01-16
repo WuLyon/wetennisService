@@ -1,0 +1,15 @@
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Member\bin\Release\Member.dll
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Member\bin\Release\Member.pdb
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Member\obj\Release\Member.csprojResolveAssemblyReference.cache
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Member\obj\Release\Member.dll
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Member\obj\Release\Member.pdb
+F:\projects\WeTennis_backend_project\WetennisService\Member\bin\Release\Member.dll
+F:\projects\WeTennis_backend_project\WetennisService\Member\bin\Release\Member.pdb
+F:\projects\WeTennis_backend_project\WetennisService\Member\obj\Release\Member.csprojResolveAssemblyReference.cache
+F:\projects\WeTennis_backend_project\WetennisService\Member\obj\Release\Member.dll
+F:\projects\WeTennis_backend_project\WetennisService\Member\obj\Release\Member.pdb
+F:\Wetennis2016\Member\bin\Release\Member.dll
+F:\Wetennis2016\Member\bin\Release\Member.pdb
+F:\Wetennis2016\Member\obj\Release\Member.csprojResolveAssemblyReference.cache
+F:\Wetennis2016\Member\obj\Release\Member.dll
+F:\Wetennis2016\Member\obj\Release\Member.pdb

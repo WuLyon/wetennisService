@@ -1,0 +1,231 @@
+﻿2014-11-27 10:42:38      ============ 开始 获取微信用户相关信息 =====================
+
+2014-11-27 10:42:38     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6_k2frpl5koIQBGiuw6FIk30t0FHac-NCNbf3HBMUMVTRSJGUhppsigo1HewSpp3c7uVo8mYsiHLPB1-WdwDkwA","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN64mbWsnwNYkNdMo-7lmjpT0zrWwL65BiQAQ9wnVukHwqSwPCPDrFcNh_Bf1CTvj74t-n8reqtPeg9_XfyJjYW4g","openid":"o_Y0JjwaroEi9ynnsEI_no4d6u_U","scope":"snsapi_base"}
+
+2014-11-27 10:42:38     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6_k2frpl5koIQBGiuw6FIk30t0FHac-NCNbf3HBMUMVTRSJGUhppsigo1HewSpp3c7uVo8mYsiHLPB1-WdwDkwA
+
+2014-11-27 10:42:39     Send 页面  openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U
+
+2014-11-27 10:42:39     Send 页面  returnStr：{"openid":"o_Y0JjwaroEi9ynnsEI_no4d6u_U","nickname":"Anson徐羽","sex":1,"language":"zh_CN","city":"Xuhui","province":"Shanghai","country":"CN","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/ibicqNAMptIoG18kMkSncGlZxpcpAP0CruBF3qBghDcMnn002YDib4ickf8UviaTnIenyq3orNE4FMTZkswfPK3EpuCC6XDp6vp9z\/0","privilege":[]}
+
+2014-11-27 10:42:39      ============ 结束 获取微信用户相关信息 =====================
+
+2014-11-27 10:42:50     ============ 单次支付开始 ===============
+
+2014-11-27 10:42:50     传递支付参数：OrderSN=20141127104238、Body=商品描述、TotalFee=1、Attach=、UserOpenId=o_Y0JjwaroEi9ynnsEI_no4d6u_U
+
+2014-11-27 10:42:50     WeiPay 页面  sign：FD7542D28FA6AB7185C3F357618690CA
+
+2014-11-27 10:42:50     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[FD7542D28FA6AB7185C3F357618690CA]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee>1</total_fee><openid><![CDATA[o_Y0JjwaroEi9ynnsEI_no4d6u_U]]></openid><out_trade_no><![CDATA[20141127104238]]></out_trade_no><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述]]></body><nonce_str><![CDATA[979d472a84804b9f647bc185a877a8b5]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 10:42:51     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[Dpw1PiZB3zDayUSG]]></nonce_str>
+<sign><![CDATA[6BE1F07629A6131C42B226A5B33E026B]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20141127104305d41ee7182c0897357687]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 10:42:51     WeiPay 页面  package：prepay_id=wx20141127104305d41ee7182c0897357687
+
+2014-11-27 10:42:51     WeiPay 页面  paySign：DF9F464DAA2184D0F592777BDD7280EC
+
+2014-11-27 10:43:18     Notify 页面  支付成功，支付信息：商家订单号20141127104238、支付金额(分)1、自定义参数：
+
+2014-11-27 10:43:18     ============ 单次支付结束 ===============
+
+2014-11-27 10:43:34     Notify 页面  支付成功，支付信息：商家订单号20141127104238、支付金额(分)1、自定义参数：
+
+2014-11-27 10:43:34     ============ 单次支付结束 ===============
+
+2014-11-27 10:44:06     Notify 页面  支付成功，支付信息：商家订单号20141127104238、支付金额(分)1、自定义参数：
+
+2014-11-27 10:44:06     ============ 单次支付结束 ===============
+
+2014-11-27 10:47:09     Notify 页面  支付成功，支付信息：商家订单号20141127104238、支付金额(分)1、自定义参数：
+
+2014-11-27 10:47:09     ============ 单次支付结束 ===============
+
+2014-11-27 10:50:10     Notify 页面  isWXsign= false ，错误信息：sign = C3177C55EE97E243AF216953BF2C420D
+ xmlMap[sign]=A116F6BB460508A7D6570649D5B85D53
+
+2014-11-27 10:53:44     Notify 页面  isWXsign= false ，错误信息：sign = 764653522D30B854C77347654A75CEAE
+ xmlMap[sign]=B00CC097D1BAE48AF34ED4DE9618F9B6
+
+2014-11-27 10:54:55     Notify 页面  isWXsign= false ，错误信息：sign = 8B4AE00DE8660B5EBEDB9C8266032A46
+ xmlMap[sign]=FAC60E8FF248FEBDE198CD73C0DD6276
+
+2014-11-27 10:57:00     Notify 页面  支付成功，支付信息：商家订单号20141127102236、支付金额(分)1、自定义参数：
+
+2014-11-27 10:57:00     ============ 单次支付结束 ===============
+
+2014-11-27 10:59:18     Notify 页面  支付成功，支付信息：商家订单号20141127102454、支付金额(分)1、自定义参数：
+
+2014-11-27 10:59:18     ============ 单次支付结束 ===============
+
+2014-11-27 11:01:58     Notify 页面  支付成功，支付信息：商家订单号20141127102728、支付金额(分)1、自定义参数：
+
+2014-11-27 11:01:58     ============ 单次支付结束 ===============
+
+2014-11-27 11:03:38      ============ 开始 获取微信用户相关信息 =====================
+
+2014-11-27 11:03:38     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6-q6kJC3gS3TSDaHvh4R2n6RTh-kbpKi-Zv2qUVciiSr0TERWXhbqcujw7Z2qwAetSTU15ejrStKmF1CSLVfoww","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6wOa1MfjBvj-VH1QYQkC12pISjt-OihgBT78deceO9rmYxx_2F8FqoeY_lATofhf3PUj0b48hIfocT5ew_yK9ag","openid":"o_Y0JjwaroEi9ynnsEI_no4d6u_U","scope":"snsapi_base"}
+
+2014-11-27 11:03:38     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6-q6kJC3gS3TSDaHvh4R2n6RTh-kbpKi-Zv2qUVciiSr0TERWXhbqcujw7Z2qwAetSTU15ejrStKmF1CSLVfoww
+
+2014-11-27 11:03:38     Send 页面  openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U
+
+2014-11-27 11:03:38     Send 页面  returnStr：{"openid":"o_Y0JjwaroEi9ynnsEI_no4d6u_U","nickname":"Anson徐羽","sex":1,"language":"zh_CN","city":"Xuhui","province":"Shanghai","country":"CN","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/ibicqNAMptIoG18kMkSncGlZxpcpAP0CruBF3qBghDcMnn002YDib4ickf8UviaTnIenyq3orNE4FMTZkswfPK3EpuCC6XDp6vp9z\/0","privilege":[]}
+
+2014-11-27 11:03:38      ============ 结束 获取微信用户相关信息 =====================
+
+2014-11-27 11:03:42     ============ 单次支付开始 ===============
+
+2014-11-27 11:03:42     传递支付参数：OrderSN=20141127110338、Body=商品描述、TotalFee=1、Attach=自定用参数、UserOpenId=o_Y0JjwaroEi9ynnsEI_no4d6u_U
+
+2014-11-27 11:03:42     WeiPay 页面  sign：0DD6FE97CE7F6541B496C6DEE3EA7133
+
+2014-11-27 11:03:42     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[0DD6FE97CE7F6541B496C6DEE3EA7133]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee>1</total_fee><openid><![CDATA[o_Y0JjwaroEi9ynnsEI_no4d6u_U]]></openid><out_trade_no><![CDATA[20141127110338]]></out_trade_no><attach><![CDATA[自定用参数]]></attach><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述]]></body><nonce_str><![CDATA[bbf94b34eb32268ada57a3be5062fe7d]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 11:03:43     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[VowwdAmaqUnpUeym]]></nonce_str>
+<sign><![CDATA[1107373E539C1F5C669B54D1725C1A8B]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20141127110357d1098335650415034741]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 11:03:43     WeiPay 页面  package：prepay_id=wx20141127110357d1098335650415034741
+
+2014-11-27 11:03:43     WeiPay 页面  paySign：D0D209BAA2ECB4915C9C17663C2EB869
+
+2014-11-27 11:03:52     Notify 页面  isWXsign= false ，错误信息：sign = FA11B9081B4771E8F1F306A2535974FD
+ xmlMap[sign]=EC8B141B2B72369BE89BA500AA736C89
+
+2014-11-27 11:04:05     Notify 页面  isWXsign= false ，错误信息：sign = FA11B9081B4771E8F1F306A2535974FD
+ xmlMap[sign]=EC8B141B2B72369BE89BA500AA736C89
+
+2014-11-27 11:04:22     Notify 页面  isWXsign= false ，错误信息：sign = FA11B9081B4771E8F1F306A2535974FD
+ xmlMap[sign]=EC8B141B2B72369BE89BA500AA736C89
+
+2014-11-27 11:04:54     Notify 页面  isWXsign= false ，错误信息：sign = FA11B9081B4771E8F1F306A2535974FD
+ xmlMap[sign]=EC8B141B2B72369BE89BA500AA736C89
+
+2014-11-27 11:07:57     Notify 页面  返回数据：appid=wx2bcba97f3c8d1812&attach=自定用参数&bank_type=CMB_CREDIT&fee_type=CNY&is_subscribe=Y&mch_id=10012630&nonce_str=bbf94b34eb32268ada57a3be5062fe7d&openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U&out_trade_no=20141127110338&result_code=SUCCESS&return_code=SUCCESS&time_end=20141127110406&total_fee=1&trade_type=JSAPI&transaction_id=1006830982201411270006231597&key=HUIYAkeji99451234567891234567899
+
+2014-11-27 11:07:57     Notify 页面  isWXsign= false ，错误信息：sign = FA11B9081B4771E8F1F306A2535974FD
+ xmlMap[sign]=EC8B141B2B72369BE89BA500AA736C89
+
+2014-11-27 11:08:18      ============ 开始 获取微信用户相关信息 =====================
+
+2014-11-27 11:08:18     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6rgMP72dVdZXZStDR_DJgQEO5ftNVrIjASmxMXqiCfIBNwMOTzqpt1lABSBKeX1RrZMfrv2mWdikQxwhvS-InXw","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN65sKeuwIT7-joc0Cn-ZnGNXDLO84cb06995G75SICOe83O5CA6ycRhMj8tt7aED3cded0EwqueseX0O8AT0Rf4A","openid":"o_Y0JjwaroEi9ynnsEI_no4d6u_U","scope":"snsapi_base"}
+
+2014-11-27 11:08:18     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6rgMP72dVdZXZStDR_DJgQEO5ftNVrIjASmxMXqiCfIBNwMOTzqpt1lABSBKeX1RrZMfrv2mWdikQxwhvS-InXw
+
+2014-11-27 11:08:18     Send 页面  openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U
+
+2014-11-27 11:08:18     Send 页面  returnStr：{"openid":"o_Y0JjwaroEi9ynnsEI_no4d6u_U","nickname":"Anson徐羽","sex":1,"language":"zh_CN","city":"Xuhui","province":"Shanghai","country":"CN","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/ibicqNAMptIoG18kMkSncGlZxpcpAP0CruBF3qBghDcMnn002YDib4ickf8UviaTnIenyq3orNE4FMTZkswfPK3EpuCC6XDp6vp9z\/0","privilege":[]}
+
+2014-11-27 11:08:18      ============ 结束 获取微信用户相关信息 =====================
+
+2014-11-27 11:08:21     ============ 单次支付开始 ===============
+
+2014-11-27 11:08:21     传递支付参数：OrderSN=20141127110818、Body=商品描述、TotalFee=1、Attach=自定用参数、UserOpenId=o_Y0JjwaroEi9ynnsEI_no4d6u_U
+
+2014-11-27 11:08:21     WeiPay 页面  sign：BA47F986383FAD8B28C94375775C65C9
+
+2014-11-27 11:08:21     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[BA47F986383FAD8B28C94375775C65C9]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee>1</total_fee><openid><![CDATA[o_Y0JjwaroEi9ynnsEI_no4d6u_U]]></openid><out_trade_no><![CDATA[20141127110818]]></out_trade_no><attach><![CDATA[自定用参数]]></attach><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述]]></body><nonce_str><![CDATA[0efe32849d230d7f53049ddc4a4b0c60]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 11:08:22     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[IlzulIzstiOsn2SG]]></nonce_str>
+<sign><![CDATA[5B36545B77064E43DAA8949B6E9293F5]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20141127110837c83ed67be20957906252]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 11:08:22     WeiPay 页面  package：prepay_id=wx20141127110837c83ed67be20957906252
+
+2014-11-27 11:08:22     WeiPay 页面  paySign：C64E7AF1C28597DDE72357E0AB999579
+
+2014-11-27 11:08:45     Notify 页面  返回数据：appid=wx2bcba97f3c8d1812&attach=自定用参数&bank_type=CMB_CREDIT&fee_type=CNY&is_subscribe=Y&mch_id=10012630&nonce_str=0efe32849d230d7f53049ddc4a4b0c60&openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U&out_trade_no=20141127110818&result_code=SUCCESS&return_code=SUCCESS&time_end=20141127110851&total_fee=1&trade_type=JSAPI&transaction_id=1006830982201411270006247411&key=HUIYAkeji99451234567891234567899
+
+2014-11-27 11:08:45     Notify 页面  isWXsign= false ，错误信息：sign = 1F09FA49546B13A1AB79238D5C8E034B
+ xmlMap[sign]=B84ADF8501728C595C7924B5AA613337
+
+2014-11-27 11:09:03     Notify 页面  返回数据：appid=wx2bcba97f3c8d1812&attach=自定用参数&bank_type=CMB_CREDIT&fee_type=CNY&is_subscribe=Y&mch_id=10012630&nonce_str=0efe32849d230d7f53049ddc4a4b0c60&openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U&out_trade_no=20141127110818&result_code=SUCCESS&return_code=SUCCESS&time_end=20141127110851&total_fee=1&trade_type=JSAPI&transaction_id=1006830982201411270006247411&key=HUIYAkeji99451234567891234567899
+
+2014-11-27 11:09:03     Notify 页面  isWXsign= false ，错误信息：sign = 1F09FA49546B13A1AB79238D5C8E034B
+ xmlMap[sign]=B84ADF8501728C595C7924B5AA613337
+
+2014-11-27 11:09:35     Notify 页面  返回数据：appid=wx2bcba97f3c8d1812&attach=自定用参数&bank_type=CMB_CREDIT&fee_type=CNY&is_subscribe=Y&mch_id=10012630&nonce_str=0efe32849d230d7f53049ddc4a4b0c60&openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U&out_trade_no=20141127110818&result_code=SUCCESS&return_code=SUCCESS&time_end=20141127110851&total_fee=1&trade_type=JSAPI&transaction_id=1006830982201411270006247411&key=HUIYAkeji99451234567891234567899
+
+2014-11-27 11:09:35     Notify 页面  isWXsign= false ，错误信息：sign = 1F09FA49546B13A1AB79238D5C8E034B
+ xmlMap[sign]=B84ADF8501728C595C7924B5AA613337
+
+2014-11-27 11:11:26     Notify 页面  返回数据：appid=wx2bcba97f3c8d1812&attach=自定义数据&bank_type=CMB_CREDIT&fee_type=CNY&is_subscribe=Y&mch_id=10012630&nonce_str=c4b31ce7d95c75ca70d50c19aef08bf1&openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U&out_trade_no=20141127103705&result_code=SUCCESS&return_code=SUCCESS&time_end=20141127103736&total_fee=1&trade_type=JSAPI&transaction_id=1006830982201411270006228994&key=HUIYAkeji99451234567891234567899
+
+2014-11-27 11:11:26     Notify 页面  isWXsign= false ，错误信息：sign = 6B17BB4DA36B18B14C32AF418ECD030D
+ xmlMap[sign]=FE96F34FF15BC0B1F94B4E958A0CE941
+
+2014-11-27 11:12:37     Notify 页面  返回数据：appid=wx2bcba97f3c8d1812&attach=自定用参数&bank_type=CMB_CREDIT&fee_type=CNY&is_subscribe=Y&mch_id=10012630&nonce_str=0efe32849d230d7f53049ddc4a4b0c60&openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U&out_trade_no=20141127110818&result_code=SUCCESS&return_code=SUCCESS&time_end=20141127110851&total_fee=1&trade_type=JSAPI&transaction_id=1006830982201411270006247411&key=HUIYAkeji99451234567891234567899
+
+2014-11-27 11:12:37     Notify 页面  isWXsign= false ，错误信息：sign = 1F09FA49546B13A1AB79238D5C8E034B
+ xmlMap[sign]=B84ADF8501728C595C7924B5AA613337
+
+2014-11-27 11:16:35      ============ 开始 获取微信用户相关信息 =====================
+
+2014-11-27 11:16:35     Send 页面  returnStr 第一个：{"access_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6Jml33FdUMSt1upuu7Fa7jzg8xvXi_v4E5PQjrd_Yln_ZwcdlJeZEB4GDGJcbzbDjjaJza61uTXZJkrOwAAUPHQ","expires_in":7200,"refresh_token":"OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6mo3KFoHV0wf4GcZU8Zfq8trLs36yU1S0oujayn_kBJo_mXQd9ly36CDhRYayeILyoyZ-toFjJBkBbX1HQWjZCw","openid":"o_Y0JjwaroEi9ynnsEI_no4d6u_U","scope":"snsapi_base"}
+
+2014-11-27 11:16:35     Send 页面  access_token：OezXcEiiBSKSxW0eoylIePYKTBSIUTni7xgv11wE6mRKowDmnmRMlVjiwKAN-fN6Jml33FdUMSt1upuu7Fa7jzg8xvXi_v4E5PQjrd_Yln_ZwcdlJeZEB4GDGJcbzbDjjaJza61uTXZJkrOwAAUPHQ
+
+2014-11-27 11:16:35     Send 页面  openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U
+
+2014-11-27 11:16:35     Send 页面  returnStr：{"openid":"o_Y0JjwaroEi9ynnsEI_no4d6u_U","nickname":"Anson徐羽","sex":1,"language":"zh_CN","city":"Xuhui","province":"Shanghai","country":"CN","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/ibicqNAMptIoG18kMkSncGlZxpcpAP0CruBF3qBghDcMnn002YDib4ickf8UviaTnIenyq3orNE4FMTZkswfPK3EpuCC6XDp6vp9z\/0","privilege":[]}
+
+2014-11-27 11:16:35      ============ 结束 获取微信用户相关信息 =====================
+
+2014-11-27 11:16:48     ============ 单次支付开始 ===============
+
+2014-11-27 11:16:48     传递支付参数：OrderSN=20141127111635、Body=商品描述、TotalFee=1、Attach=xuyu、UserOpenId=o_Y0JjwaroEi9ynnsEI_no4d6u_U
+
+2014-11-27 11:16:48     WeiPay 页面  sign：1ED581E965CD6DF4213082FE3E475775
+
+2014-11-27 11:16:48     WeiPay 页面  package（XML）：<xml><appid><![CDATA[wx2bcba97f3c8d1812]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><sign><![CDATA[1ED581E965CD6DF4213082FE3E475775]]></sign><spbill_create_ip><![CDATA[222.66.228.213]]></spbill_create_ip><total_fee>1</total_fee><openid><![CDATA[o_Y0JjwaroEi9ynnsEI_no4d6u_U]]></openid><out_trade_no><![CDATA[20141127111635]]></out_trade_no><attach><![CDATA[xuyu]]></attach><mch_id><![CDATA[10012630]]></mch_id><body><![CDATA[商品描述]]></body><nonce_str><![CDATA[248e844336797ec98478f85e7626de4a]]></nonce_str><notify_url><![CDATA[http://wx2.shhuiya.com.cn/WXPay/Notify.aspx]]></notify_url></xml>
+
+2014-11-27 11:16:49     WeiPay 页面  package（Back_XML）：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx2bcba97f3c8d1812]]></appid>
+<mch_id><![CDATA[10012630]]></mch_id>
+<nonce_str><![CDATA[wPLDgxO51y2P8uaw]]></nonce_str>
+<sign><![CDATA[B45877114E4F521D0BBB8C49C29D8DE0]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20141127111704b04bce29300879968140]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+
+2014-11-27 11:16:49     WeiPay 页面  package：prepay_id=wx20141127111704b04bce29300879968140
+
+2014-11-27 11:16:49     WeiPay 页面  paySign：10814EC57DE2BFC04C63B921AB9C0E81
+
+2014-11-27 11:17:10     Notify 页面  返回数据：appid=wx2bcba97f3c8d1812&bank_type=CMB_CREDIT&fee_type=CNY&is_subscribe=Y&mch_id=10012630&nonce_str=979d472a84804b9f647bc185a877a8b5&openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U&out_trade_no=20141127104238&result_code=SUCCESS&return_code=SUCCESS&time_end=20141127104318&total_fee=1&trade_type=JSAPI&transaction_id=1006830982201411270006228999&key=HUIYAkeji99451234567891234567899
+
+2014-11-27 11:17:10     Notify 页面  支付成功，支付信息：商家订单号：20141127104238、支付金额(分)：1、自定义参数：
+
+2014-11-27 11:17:10     ============ 单次支付结束 ===============
+
+2014-11-27 11:17:34     Notify 页面  返回数据：appid=wx2bcba97f3c8d1812&attach=xuyu&bank_type=CMB_CREDIT&fee_type=CNY&is_subscribe=Y&mch_id=10012630&nonce_str=248e844336797ec98478f85e7626de4a&openid=o_Y0JjwaroEi9ynnsEI_no4d6u_U&out_trade_no=20141127111635&result_code=SUCCESS&return_code=SUCCESS&time_end=20141127111736&total_fee=1&trade_type=JSAPI&transaction_id=1006830982201411270006239407&key=HUIYAkeji99451234567891234567899
+
+2014-11-27 11:17:34     Notify 页面  支付成功，支付信息：商家订单号：20141127111635、支付金额(分)：1、自定义参数：xuyu
+
+2014-11-27 11:17:34     ============ 单次支付结束 ===============
+

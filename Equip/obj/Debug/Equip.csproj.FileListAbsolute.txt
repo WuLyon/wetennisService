@@ -1,0 +1,14 @@
+E:\Project\DataDriven2\WTF\WTF\RefProject\Equip\bin\Debug\Equip.dll
+E:\Project\DataDriven2\WTF\WTF\RefProject\Equip\bin\Debug\Equip.pdb
+E:\Project\DataDriven2\WTF\WTF\RefProject\Equip\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\DataDriven2\WTF\WTF\RefProject\Equip\obj\Debug\Equip.dll
+E:\Project\DataDriven2\WTF\WTF\RefProject\Equip\obj\Debug\Equip.pdb
+F:\projects\WeTennis_backend_project\WetennisService\Equip\bin\Debug\Equip.dll
+F:\projects\WeTennis_backend_project\WetennisService\Equip\bin\Debug\Equip.pdb
+F:\projects\WeTennis_backend_project\WetennisService\Equip\obj\Debug\Equip.csprojResolveAssemblyReference.cache
+F:\projects\WeTennis_backend_project\WetennisService\Equip\obj\Debug\Equip.dll
+F:\projects\WeTennis_backend_project\WetennisService\Equip\obj\Debug\Equip.pdb
+F:\Wetennis2016\Equip\bin\Debug\Equip.dll
+F:\Wetennis2016\Equip\bin\Debug\Equip.pdb
+F:\Wetennis2016\Equip\obj\Debug\Equip.dll
+F:\Wetennis2016\Equip\obj\Debug\Equip.pdb

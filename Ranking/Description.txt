@@ -1,0 +1,3 @@
+﻿积分排名说明
+PointType：club/wetennis
+TypeSys：ClubSys（PointType 是Club的时候读TypeSys，表明是哪个俱乐部，如果Type 是Wetennis，就不用填写这个字段）

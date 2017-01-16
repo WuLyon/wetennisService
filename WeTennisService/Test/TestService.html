@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="/Test/jquery-1.8.2.js"></script>
+    <script type="text/javascript">
+        function TestWeb()
+        {          
+                $.ajax({
+                    type: "POST",
+                    //url: "http://wetennis.cn:8883/WebService/SMS.ashx",
+                    //url: " http://wetennis.cn:8883/API/FEservice.ashx?method=getEventDetail",
+                    //url: " /API/FEservice.ashx?method=GetMatchesByContRound",
+                    url: "/BackService/TourMgm.ashx",
+                    //data: { typename: "GenerateCodeInter", phone:"13678162515"},
+                    data: { typename: "GetMatchesByContRound", cont: "353", round: "" },
+                    success: function (data) {
+                        alert(data);
+                    }
+                });
+        }
+
+        function testPost()
+        {
+            var res = '[{"TOURSYS":"DC9B65E972B24F9F8BE1DF0354D9E2EE","CONTENTID":"047a3ec762e44d4b8c290d7328dab227","contentName":"80岁组男子双打","MEMBERID":"642","playerName":"郭德和","PATERNER":"e8729e58-5e0d-4158-8d4f-33cff13510f9","parternerName":"冉亚灵"},{"TOURSYS":"DC9B65E972B24F9F8BE1DF0354D9E2EE","CONTENTID":"047a3ec762e44d4b8c290d7328dab227","contentName":"80岁组男子双打","MEMBERID":"e829287d-539c-47d4-9425-d324d6a7bf81","playerName":"李泷泽","PATERNER":"6","parternerName":"邱锋"}]';
+            $.ajax({
+                async: "false",
+                type: "POST",
+                contentType: "application/json",
+                url: "/BackService/TourMgm.ashx?typename=AddDirectApply",
+                data: res,
+                success: function (data) {
+                    alert(data);
+                    var res = eval("(" + data + ")");
+                    if (res.code == 0) {
+                        //$("#FunctFRight",window.parent.document).hide();	
+                        //将添加结果返回到添加清单上面
+                        Apply_Result = res.data;
+                        loadAddResult();
+                        $("#BeforeSub").hide();
+                        $("#AfterSub").show();
+                    }
+                }
+            });
+        }
+        
+        function GetSysstr()
+        {
+            var funcName = $("#seleFun").val();
+            var tabname = $("#tablename").val();
+            var field = $("#tableField").val();
+            $.get("/BackService/System.ashx", { typename: funcName, tablename: tabname, field: field }, function (data) {
+                //$("#res").html(data);
+                $("#allRes").val(data);
+            });
+        }
+
+    </script>
+
+</head>
+<body>
+    <input type="button" value="TestPost" onclick="testPost()" />
+
+    <input type="button" value="TestWebService" onclick="TestWeb()" />
+    <h3>获取sql类型</h3>
+    <select id="seleFun"><option value="GetInsert">GetInsert</option><option value="GetEntity">GetEntity</option></select>
+    tablename<input type="text" id="tablename" />
+    tableFiled<input type="text" id="tableField" />
+    <input type="button" value="生成sql" onclick="GetSysstr()"/>
+    <label id="res"></label>
+    <br />
+    <textarea id="allRes" cols="150" rows="30"></textarea>
+</body>
+</html>

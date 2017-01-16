@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3477679A-7202-4790-B809-FBC67BC47487}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeTour</RootNamespace>
+    <AssemblyName>WeTour</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Biz\CourtResourceDll.cs" />
+    <Compile Include="Biz\TourResDisDll.cs" />
+    <Compile Include="Biz\WeMatchDll.cs" />
+    <Compile Include="Biz\WeTourApplyDll.cs" />
+    <Compile Include="Biz\WeTourApplyFee.cs" />
+    <Compile Include="Biz\WeTourContentDll.cs" />
+    <Compile Include="Biz\WeTourDll.cs" />
+    <Compile Include="Biz\WeTourSeedDll.cs" />
+    <Compile Include="Biz\WeTourSignDll.cs" />
+    <Compile Include="Bus\WeContentSignsDll.cs" />
+    <Compile Include="Bus\WeTourApplyPage.cs" />
+    <Compile Include="Bus\WeTourSignMain.cs" />
+    <Compile Include="DBHelperSQL.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="Model\CityInfo.cs" />
+    <Compile Include="Model\ContSignModel.cs" />
+    <Compile Include="Model\CourtResourceModel.cs" />
+    <Compile Include="Model\GroupModel.cs" />
+    <Compile Include="Model\WeMatchModel.cs" />
+    <Compile Include="Model\WeTourApplyModel.cs" />
+    <Compile Include="Model\WeTourContModel.cs" />
+    <Compile Include="Model\WeTourModel.cs" />
+    <Compile Include="Model\WeTourScheduleModel.cs" />
+    <Compile Include="Model\WeTourSeedModel.cs" />
+    <Compile Include="Model\WeTourSignModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Club\Club.csproj">
+      <Project>{D9C592FC-AB95-4627-8BD9-6CC4A0AE6377}</Project>
+      <Name>Club</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gym\Gym.csproj">
+      <Project>{7B3CA5FE-2290-43AA-9572-04693EE43E0A}</Project>
+      <Name>Gym</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Member\Member.csproj">
+      <Project>{12B3BC3B-DF4D-47EC-ADFA-6224C6653955}</Project>
+      <Name>Member</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrderLib\OrderLib.csproj">
+      <Project>{AF6B43EA-41F6-4D6C-A755-B31C927B9F27}</Project>
+      <Name>OrderLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS\SMS.csproj">
+      <Project>{88D0079F-A477-40DE-AEA4-9164B23F8CA5}</Project>
+      <Name>SMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

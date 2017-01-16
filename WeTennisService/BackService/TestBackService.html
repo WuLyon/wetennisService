@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Test_Back_Service</title>
+    <script src="/Test/jquery-1.8.2.js"></script>
+    <script type="text/javascript">
+
+        function Register()
+        {
+            $.ajax({
+                type: "GET",
+                contentType: "application/json",
+                url: "/BackService/TourMgm.ashx?typename=Dis_TourResource",
+                data: { "toursys": "51D04188E1174A1ABC44EA698F65F906" },
+                success: function (ret) {
+                    alert(ret);
+                }
+            });
+        }
+
+        function testPost() {
+            var res = '[{ "TOURSYS": "FA64C51C92474D7884F20A573BBDD6DB", "CONTENTID": "5ed6782d91014331b150d230c685d463", "contentName": "男子单打", "MEMBERID": "69", "playerName": "叶成飞", "PATERNER": "", "parternerName": "" }]';
+            $.ajax({
+                async: "false",
+                type: "POST",
+                contentType: "application/json",
+                url: "/BackService/TourMgm.ashx?typename=AddDirectApply",
+                data: res,
+                success: function (data) {
+                    alert(data);
+                   
+                }
+            });
+        }
+
+        function SubmitApplyList() {
+            
+            var res = '[{"TOURSYS":"FA64C51C92474D7884F20A573BBDD6DB","CONTENTID":"5ed6782d91014331b150d230c685d463","contentName":"男子单打","MEMBERID":"9ef3d426-7e09-4bdb-87e3-e10eaddaa5b5","playerName":"门张茂","PATERNER":"","parternerName":""}]';
+            alert(res);
+          
+            $.ajax({
+                type: "POST",
+                contentType: "application/json,charset=utf-8",
+                //url:"http://wetennis.cn:83/BackService/TourMgm.ashx?typename=AddDirectApply2",
+                url: "/API/FEservice.ashx?method=directApply",
+                data: res,
+                success: function (data) {
+                    alert(data);
+                   
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <h3>User InterFace</h3>
+    <input type="button" value="testGet" onclick="Register()"/>
+
+    <input type="button" value="TestPost" onclick="SubmitApplyList()" />
+</body>
+</html>

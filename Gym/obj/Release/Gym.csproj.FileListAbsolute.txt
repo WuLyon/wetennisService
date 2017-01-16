@@ -1,0 +1,10 @@
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Gym\bin\Release\Gym.dll
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Gym\bin\Release\Gym.pdb
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Gym\obj\Release\Gym.csprojResolveAssemblyReference.cache
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Gym\obj\Release\Gym.dll
+D:\DATADRIVEN\产品\WTF\Code\整体项目备份\RefProject\Gym\obj\Release\Gym.pdb
+F:\Wetennis2016\Gym\bin\Release\Gym.dll
+F:\Wetennis2016\Gym\bin\Release\Gym.pdb
+F:\Wetennis2016\Gym\obj\Release\Gym.csprojResolveAssemblyReference.cache
+F:\Wetennis2016\Gym\obj\Release\Gym.dll
+F:\Wetennis2016\Gym\obj\Release\Gym.pdb

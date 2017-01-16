@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>测试API</title>
+    <script src="/Test/jquery-1.8.2.js"></script>
+    <script type="text/javascript">
+        function Test()
+        {
+            var url = $("#tbUrl").val();
+            var param = $("#tbParam").val();
+            $.get(url, param, function (data) {
+                alert(data);
+                $("#res").html(data);
+            });
+        }
+
+    </script>
+</head>
+<body>
+    <span>url</span><input type="text" id="tbUrl" /><br />
+    <span>params</span><input type="text" id="tbParam" value="{}"/><br />
+    <input type="button" value="测试"  onclick="Test()"/><br />
+    输出结果：<br />
+    <label id="res"></label>
+
+</body>
+</html>

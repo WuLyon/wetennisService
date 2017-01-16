@@ -1,0 +1,10 @@
+﻿2015/4/27 22:41:23     ============ 单次支付开始 ===============
+
+2015/4/27 22:41:23     传递支付参数：OrderSN=、Body=、TotalFee=、Attach=、UserOpenId=
+
+2015/4/27 22:41:23     WeiPay 页面  sign：FDBEB65B1C80AFABD5123EF6CB902223
+
+2015/4/27 22:42:16     WeiPay 页面  sign：5ACC58E620CB6EBE20DD41061CFD6241
+
+2015/4/27 22:42:16     WeiPay 页面  package（XML）：<xml><spbill_create_ip><![CDATA[127.0.0.1]]></spbill_create_ip><sign><![CDATA[5ACC58E620CB6EBE20DD41061CFD6241]]></sign><body><![CDATA[]]></body><appid><![CDATA[wxe90eba22e992ffba]]></appid><trade_type><![CDATA[JSAPI]]></trade_type><total_fee><![CDATA[]]></total_fee><nonce_str><![CDATA[ef575e8837d065a1683c022d2077d342]]></nonce_str><notify_url><![CDATA[http://wetennis.cn/RefProject/WeiPayWeb/Notify.aspx]]></notify_url><openid><![CDATA[]]></openid><mch_id><![CDATA[1236979802]]></mch_id><out_trade_no><![CDATA[]]></out_trade_no></xml>
+

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZJ/3CZhoaky0wmqdZGsQsQAAAAACAAAAAAAQZgAAAAEAACAAAADXuqiaHHQKCkRtpcZKsfyTwokJSuzJsjmxbcdiKzGFDwAAAAAOgAAAAAIAACAAAABWkQmwfEXk+SiIo+uZeofyAa4zajRvSCBFNfk9cwKAICAAAABeh70kp9eq+YyvsFd1M4x6XofUAJ4tbD1lzYNJEJ30fkAAAAC0zuUanK30uG7+yHsbqTVvf9Cr3px4Dxx1qfrRUiAzi1Bf7aL8ItFEnd4SKwn4XyHA+vj8EoS9vZvmwkge+WCL</EncryptedPassword>
+    <_PublishTargetUrl>ftp://119.90.129.23/IISweb\WeTennisService</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="API/FEservice.ashx">
+      <publishTime>07/16/2016 15:49:41</publishTime>
+    </File>
+    <File Include="API/News.asmx">
+      <publishTime>07/16/2016 15:49:41</publishTime>
+    </File>
+    <File Include="API/PayMent.ashx">
+      <publishTime>08/15/2016 08:08:45</publishTime>
+    </File>
+    <File Include="API/TestService.html">
+      <publishTime>12/16/2016 22:41:16</publishTime>
+    </File>
+    <File Include="BackService/AutoComp.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="BackService/System.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="BackService/TestBackService.html">
+      <publishTime>08/09/2016 11:55:43</publishTime>
+    </File>
+    <File Include="BackService/TourMgm.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="BackService/TourMgmJson.ashx">
+      <publishTime>08/09/2016 16:00:33</publishTime>
+    </File>
+    <File Include="bin/Basic.dll">
+      <publishTime>08/09/2016 15:16:25</publishTime>
+    </File>
+    <File Include="bin/Bet.dll">
+      <publishTime>07/16/2016 16:49:21</publishTime>
+    </File>
+    <File Include="bin/Club.dll">
+      <publishTime>08/10/2016 07:41:59</publishTime>
+    </File>
+    <File Include="bin/Equip.dll">
+      <publishTime>10/25/2016 21:20:23</publishTime>
+    </File>
+    <File Include="bin/Gym.dll">
+      <publishTime>09/30/2016 10:32:29</publishTime>
+    </File>
+    <File Include="bin/Member.dll">
+      <publishTime>12/17/2016 20:09:45</publishTime>
+    </File>
+    <File Include="bin/News.dll">
+      <publishTime>07/16/2016 16:49:12</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="bin/OrderLib.dll">
+      <publishTime>08/17/2016 18:19:40</publishTime>
+    </File>
+    <File Include="bin/Ranking.dll">
+      <publishTime>10/30/2016 22:49:31</publishTime>
+    </File>
+    <File Include="bin/SMS.dll">
+      <publishTime>09/27/2016 23:03:48</publishTime>
+    </File>
+    <File Include="bin/SMS.XmlSerializers.dll">
+      <publishTime>07/16/2016 16:49:14</publishTime>
+    </File>
+    <File Include="bin/Time.dll">
+      <publishTime>07/16/2016 16:49:20</publishTime>
+    </File>
+    <File Include="bin/Union.dll">
+      <publishTime>07/16/2016 16:49:17</publishTime>
+    </File>
+    <File Include="bin/WeChat.dll">
+      <publishTime>08/18/2016 09:31:55</publishTime>
+    </File>
+    <File Include="bin/WeTennisService.dll">
+      <publishTime>12/17/2016 20:37:46</publishTime>
+    </File>
+    <File Include="bin/WeTennisService.pdb">
+      <publishTime>09/21/2016 07:57:02</publishTime>
+    </File>
+    <File Include="bin/WeTour.dll">
+      <publishTime>12/21/2016 09:59:26</publishTime>
+    </File>
+    <File Include="bin/WeUmpire.dll">
+      <publishTime>07/16/2016 16:49:19</publishTime>
+    </File>
+    <File Include="JSService/Tour.asmx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="Test/Alogrithem.asmx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="Test/APItest.html">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="Test/CommenMethod.js">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="Test/JavaScript1.js">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="Test/jquery-1.8.2.js">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="Test/Newtonsoft.Json.dll">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="Test/PictureUpload.html">
+      <publishTime>02/21/2016 19:35:15</publishTime>
+    </File>
+    <File Include="Test/PicUpload.html">
+      <publishTime>01/08/2016 17:10:52</publishTime>
+    </File>
+    <File Include="Test/PicUpload2.html">
+      <publishTime>01/22/2016 22:03:42</publishTime>
+    </File>
+    <File Include="Test/ReSetImg.html">
+      <publishTime>01/07/2016 15:05:06</publishTime>
+    </File>
+    <File Include="Test/TEST.aspx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="Test/TestService.html">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/06/2016 14:23:54</publishTime>
+    </File>
+    <File Include="WebService/DescHtml.asmx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/PicUpload.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/PicUpload.aspx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/PicUpload2.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/PicUploadBase.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/SMS.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/TourMgm.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeBet.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeChat.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeClub.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeMember.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeNews.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeRank.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeTennisTime.asmx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeTime.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeTour.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeUmpire.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WebService/WeUnion.ashx">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+    <File Include="WeTour.csproj">
+      <publishTime>07/16/2016 15:49:35</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

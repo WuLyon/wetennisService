@@ -1,0 +1,5 @@
+E:\Project\DataDriven2\WTF\WTF\RefProject\ChampGuess\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\DataDriven2\WTF\WTF\RefProject\ChampGuess\bin\Debug\ChampGuess.dll
+E:\Project\DataDriven2\WTF\WTF\RefProject\ChampGuess\bin\Debug\ChampGuess.pdb
+E:\Project\DataDriven2\WTF\WTF\RefProject\ChampGuess\obj\Debug\ChampGuess.dll
+E:\Project\DataDriven2\WTF\WTF\RefProject\ChampGuess\obj\Debug\ChampGuess.pdb

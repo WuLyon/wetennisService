@@ -1,0 +1,5 @@
+E:\Project\DataDriven2\WTF\WTF\RefProject\MemberLib\bin\Debug\MemberLib.dll
+E:\Project\DataDriven2\WTF\WTF\RefProject\MemberLib\bin\Debug\MemberLib.pdb
+E:\Project\DataDriven2\WTF\WTF\RefProject\MemberLib\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\DataDriven2\WTF\WTF\RefProject\MemberLib\obj\Debug\MemberLib.dll
+E:\Project\DataDriven2\WTF\WTF\RefProject\MemberLib\obj\Debug\MemberLib.pdb

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="/Test/jquery-1.8.2.js"></script>
+    <script type="text/javascript">
+        function TestWeb()
+        {          
+               
+                var url = '/WebService/WeTour.ashx?typename=DistributeResource&jsoncallback=?';
+                var urlstr = location.href;
+                //$.getJSON(url, { toursys: "57133082-EEF8-45C4-9690-8FA10310C7F8" }, function (data) {
+                    //alert(JSON.stringify(data));
+            //}); 
+                var App=[];
+                App[0]={contentid:'123',player:'city02'};
+                App[1]={contentid:'123',player:'city02'};
+                alert(App.length);
+
+                $.ajax({
+                    type: "POST",
+                    url: " /BackService/TourMgm.ashx",
+                    data: { typename: "RandomDistributeRes", toursys: "EBCC7B7E656342A08CEB5D9829295684" },
+                    success: function (data) {
+                        alert(data);
+                    }
+                });
+        }
+        
+        function GetSysstr()
+        {
+            var funcName = $("#seleFun").val();
+            var tabname = $("#tablename").val();
+            var field = $("#tableField").val();
+            $.get("/BackService/System.ashx", { typename: funcName, tablename: tabname, field: field }, function (data) {
+                //$("#res").html(data);
+                $("#allRes").val(data);
+            });
+        }
+
+    </script>
+
+</head>
+<body>
+    <input type="button" value="TestWebService" onclick="TestWeb()" />
+    <h3>获取sql类型</h3>
+    <select id="seleFun"><option value="GetInsert">GetInsert</option><option value="GetEntity">GetEntity</option></select>
+    tablename<input type="text" id="tablename" />
+    tableFiled<input type="text" id="tableField" />
+    <input type="button" value="生成sql" onclick="GetSysstr()"/>
+    <label id="res"></label>
+    <br />
+    <textarea id="allRes" cols="150" rows="30"></textarea>
+</body>
+</html>
