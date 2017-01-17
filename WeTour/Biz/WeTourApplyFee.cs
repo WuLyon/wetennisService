@@ -17,15 +17,15 @@ namespace WeTour
         /// <returns></returns>
         public string GetApplyFee(string _Toursys,string _Status)
         {
-            int _ApplyFee = 0;
+            double _ApplyFee = 0;
             WeTourModel tmodel = WeTourDll.instance.GetModelbySys(_Toursys);
             
             List<WeTourContModel> list = WeTourContentDll.instance.GetContentlist(_Toursys);
             if (list.Count > 0)
             {
                 foreach (WeTourContModel model in list)
-                { 
-                    int App = Convert.ToInt32(tmodel.EXT1);//报名费单价
+                {
+                    double App = Convert.ToDouble(tmodel.EXT1);//报名费单价
                     //确定该子项的报名费
                     if (model.ContentType.IndexOf("双") > 0)
                     { 
