@@ -12,3 +12,8 @@ F:\Wetennis2016\Basic\bin\Debug\Basic.dll
 F:\Wetennis2016\Basic\bin\Debug\Basic.pdb
 F:\Wetennis2016\Basic\obj\Debug\Basic.dll
 F:\Wetennis2016\Basic\obj\Debug\Basic.pdb
+F:\WetennisGit\wetennisService\Basic\bin\Debug\Basic.dll
+F:\WetennisGit\wetennisService\Basic\bin\Debug\Basic.pdb
+F:\WetennisGit\wetennisService\Basic\obj\Debug\Basic.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\Basic\obj\Debug\Basic.dll
+F:\WetennisGit\wetennisService\Basic\obj\Debug\Basic.pdb

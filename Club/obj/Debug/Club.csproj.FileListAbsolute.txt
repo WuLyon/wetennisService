@@ -40,3 +40,14 @@ F:\Wetennis2016\Club\bin\Debug\SMS.pdb
 F:\Wetennis2016\Club\obj\Debug\Club.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\Club\obj\Debug\Club.dll
 F:\Wetennis2016\Club\obj\Debug\Club.pdb
+F:\WetennisGit\wetennisService\Club\bin\Debug\Club.dll
+F:\WetennisGit\wetennisService\Club\bin\Debug\Club.pdb
+F:\WetennisGit\wetennisService\Club\bin\Debug\Gym.dll
+F:\WetennisGit\wetennisService\Club\bin\Debug\Member.dll
+F:\WetennisGit\wetennisService\Club\bin\Debug\SMS.dll
+F:\WetennisGit\wetennisService\Club\bin\Debug\Gym.pdb
+F:\WetennisGit\wetennisService\Club\bin\Debug\Member.pdb
+F:\WetennisGit\wetennisService\Club\bin\Debug\SMS.pdb
+F:\WetennisGit\wetennisService\Club\obj\Debug\Club.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\Club\obj\Debug\Club.dll
+F:\WetennisGit\wetennisService\Club\obj\Debug\Club.pdb

@@ -188,7 +188,7 @@ namespace WeTour
 
             model.banner = bannerUrl;
 
-            int timeSpan = Biz_Time.instance.ComputeDateDiff(DateTime.Now.ToString(), tour.ENDDATE);
+            long timeSpan = Biz_Time.instance.ComputeDateDiff(DateTime.Now.ToString(), tour.ENDDATE);
             model.countdown = timeSpan*1000;//单位为毫秒
 
             //赛事举办俱乐部

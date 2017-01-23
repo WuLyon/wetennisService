@@ -15,7 +15,7 @@ namespace WeTour
         /// <param name="Start"></param>
         /// <param name="End"></param>
         /// <returns></returns>
-        public int ComputeDateDiff(string _Start, string _End)
+        public long ComputeDateDiff(string _Start, string _End)
         {
             DateTime Start = Convert.ToDateTime(_Start);
             DateTime End = Convert.ToDateTime(_End);

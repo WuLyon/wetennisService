@@ -47,3 +47,14 @@ F:\Wetennis2016\OrderLib\bin\Debug\Member.pdb
 F:\Wetennis2016\OrderLib\obj\Debug\OrderLib.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\OrderLib\obj\Debug\OrderLib.dll
 F:\Wetennis2016\OrderLib\obj\Debug\OrderLib.pdb
+F:\WetennisGit\wetennisService\OrderLib\bin\Debug\OrderLib.dll
+F:\WetennisGit\wetennisService\OrderLib\bin\Debug\OrderLib.pdb
+F:\WetennisGit\wetennisService\OrderLib\bin\Debug\Gym.dll
+F:\WetennisGit\wetennisService\OrderLib\bin\Debug\SMS.dll
+F:\WetennisGit\wetennisService\OrderLib\bin\Debug\Member.dll
+F:\WetennisGit\wetennisService\OrderLib\bin\Debug\Gym.pdb
+F:\WetennisGit\wetennisService\OrderLib\bin\Debug\SMS.pdb
+F:\WetennisGit\wetennisService\OrderLib\bin\Debug\Member.pdb
+F:\WetennisGit\wetennisService\OrderLib\obj\Debug\OrderLib.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\OrderLib\obj\Debug\OrderLib.dll
+F:\WetennisGit\wetennisService\OrderLib\obj\Debug\OrderLib.pdb

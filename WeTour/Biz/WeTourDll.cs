@@ -596,18 +596,21 @@ namespace WeTour
             //delete pre tour match
             string sql1 = "delete wtf_match where contentid='" + _Contentid + "'";
             int a = DbHelperSQL.ExecuteSql(sql1);
-
-            //Add Group Matches
-            string sql = "select distinct(signorder) from wtf_toursign where contentid='" + _Contentid + "' and round=0";
-            DataTable dt = DbHelperSQL.Query(sql).Tables[0];
-            if (dt.Rows.Count > 0)
-            {
-                for (int i = 0; i < dt.Rows.Count; i++)
+            WeTourContModel contModel = WeTourContentDll.instance.GetModelbyId(_Contentid);
+            //if (contModel.AllowGroup == "1")
+            //{
+                //Add Group Matches
+                string sql = "select distinct(signorder) from wtf_toursign where contentid='" + _Contentid + "' and round=0";
+                DataTable dt = DbHelperSQL.Query(sql).Tables[0];
+                if (dt.Rows.Count > 0)
                 {
-                    //Add Group match by match order
-                    AddGroupMatches(_Contentid, dt.Rows[i][0].ToString());
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        //Add Group match by match order
+                        AddGroupMatches(_Contentid, dt.Rows[i][0].ToString());
+                    }
                 }
-            }
+            //}
 
             //add Knockout Matches
             AddKnockoutMatches(_Contentid);

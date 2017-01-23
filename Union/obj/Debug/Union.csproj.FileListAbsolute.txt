@@ -37,3 +37,16 @@ F:\Wetennis2016\Union\bin\Debug\SMS.pdb
 F:\Wetennis2016\Union\obj\Debug\Union.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\Union\obj\Debug\Union.dll
 F:\Wetennis2016\Union\obj\Debug\Union.pdb
+F:\WetennisGit\wetennisService\Union\bin\Debug\Union.dll
+F:\WetennisGit\wetennisService\Union\bin\Debug\Union.pdb
+F:\WetennisGit\wetennisService\Union\bin\Debug\Club.dll
+F:\WetennisGit\wetennisService\Union\bin\Debug\Member.dll
+F:\WetennisGit\wetennisService\Union\bin\Debug\Gym.dll
+F:\WetennisGit\wetennisService\Union\bin\Debug\SMS.dll
+F:\WetennisGit\wetennisService\Union\bin\Debug\Club.pdb
+F:\WetennisGit\wetennisService\Union\bin\Debug\Member.pdb
+F:\WetennisGit\wetennisService\Union\bin\Debug\Gym.pdb
+F:\WetennisGit\wetennisService\Union\bin\Debug\SMS.pdb
+F:\WetennisGit\wetennisService\Union\obj\Debug\Union.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\Union\obj\Debug\Union.dll
+F:\WetennisGit\wetennisService\Union\obj\Debug\Union.pdb

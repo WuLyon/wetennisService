@@ -62,7 +62,7 @@ namespace WeTour
         /// <summary>
         /// 赛事倒计时，以毫秒为单位的时间戳
         /// </summary>
-        public int countdown { get; set; }
+        public long countdown { get; set; }
         public string banner { get; set; }
         public string thumb { get; set; }      
         public int friendRegisterCount { get; set; }

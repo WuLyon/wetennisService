@@ -35,3 +35,11 @@ F:\Wetennis2016\SMS\bin\Debug\Member.pdb
 F:\Wetennis2016\SMS\obj\Debug\SMS.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\SMS\obj\Debug\SMS.dll
 F:\Wetennis2016\SMS\obj\Debug\SMS.pdb
+F:\WetennisGit\wetennisService\SMS\bin\Debug\SMS.dll.config
+F:\WetennisGit\wetennisService\SMS\bin\Debug\SMS.dll
+F:\WetennisGit\wetennisService\SMS\bin\Debug\SMS.pdb
+F:\WetennisGit\wetennisService\SMS\bin\Debug\Member.dll
+F:\WetennisGit\wetennisService\SMS\bin\Debug\Member.pdb
+F:\WetennisGit\wetennisService\SMS\obj\Debug\SMS.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\SMS\obj\Debug\SMS.dll
+F:\WetennisGit\wetennisService\SMS\obj\Debug\SMS.pdb

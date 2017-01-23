@@ -34,3 +34,16 @@ F:\Wetennis2016\WeChat\bin\Debug\Member.pdb
 F:\Wetennis2016\WeChat\obj\Debug\WeChat.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\WeChat\obj\Debug\WeChat.dll
 F:\Wetennis2016\WeChat\obj\Debug\WeChat.pdb
+F:\WetennisGit\wetennisService\WeChat\bin\Debug\WeChat.dll
+F:\WetennisGit\wetennisService\WeChat\bin\Debug\WeChat.pdb
+F:\WetennisGit\wetennisService\WeChat\bin\Debug\OrderLib.dll
+F:\WetennisGit\wetennisService\WeChat\bin\Debug\SMS.dll
+F:\WetennisGit\wetennisService\WeChat\bin\Debug\Gym.dll
+F:\WetennisGit\wetennisService\WeChat\bin\Debug\Member.dll
+F:\WetennisGit\wetennisService\WeChat\bin\Debug\OrderLib.pdb
+F:\WetennisGit\wetennisService\WeChat\bin\Debug\SMS.pdb
+F:\WetennisGit\wetennisService\WeChat\bin\Debug\Gym.pdb
+F:\WetennisGit\wetennisService\WeChat\bin\Debug\Member.pdb
+F:\WetennisGit\wetennisService\WeChat\obj\Debug\WeChat.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\WeChat\obj\Debug\WeChat.dll
+F:\WetennisGit\wetennisService\WeChat\obj\Debug\WeChat.pdb

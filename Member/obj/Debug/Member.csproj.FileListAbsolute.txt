@@ -17,3 +17,8 @@ F:\Wetennis2016\Member\bin\Debug\Member.dll
 F:\Wetennis2016\Member\bin\Debug\Member.pdb
 F:\Wetennis2016\Member\obj\Debug\Member.dll
 F:\Wetennis2016\Member\obj\Debug\Member.pdb
+F:\WetennisGit\wetennisService\Member\bin\Debug\Member.dll
+F:\WetennisGit\wetennisService\Member\bin\Debug\Member.pdb
+F:\WetennisGit\wetennisService\Member\obj\Debug\Member.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\Member\obj\Debug\Member.dll
+F:\WetennisGit\wetennisService\Member\obj\Debug\Member.pdb

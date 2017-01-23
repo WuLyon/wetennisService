@@ -25,7 +25,8 @@ namespace WeTour
             {
                 foreach (WeTourContModel model in list)
                 {
-                    double App = Convert.ToDouble(tmodel.EXT1);//报名费单价
+                    double App = 0;
+                    Double.TryParse(tmodel.EXT1,out App);//报名费单价
                     //确定该子项的报名费
                     if (model.ContentType.IndexOf("双") > 0)
                     { 

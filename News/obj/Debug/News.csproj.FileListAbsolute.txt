@@ -22,3 +22,8 @@ F:\Wetennis2016\News\bin\Debug\News.dll
 F:\Wetennis2016\News\bin\Debug\News.pdb
 F:\Wetennis2016\News\obj\Debug\News.dll
 F:\Wetennis2016\News\obj\Debug\News.pdb
+F:\WetennisGit\wetennisService\News\bin\Debug\News.dll
+F:\WetennisGit\wetennisService\News\bin\Debug\News.pdb
+F:\WetennisGit\wetennisService\News\obj\Debug\News.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\News\obj\Debug\News.dll
+F:\WetennisGit\wetennisService\News\obj\Debug\News.pdb
