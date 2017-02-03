@@ -1009,7 +1009,7 @@ namespace WeTennisService.API
 
                 try
                 {
-                    _eventId = req.id;
+                    _eventId = req.id; 
                 }
                 catch (Exception e)
                 { 

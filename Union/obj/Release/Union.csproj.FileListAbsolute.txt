@@ -38,3 +38,17 @@ F:\Wetennis2016\Union\bin\Release\SMS.XmlSerializers.dll
 F:\Wetennis2016\Union\obj\Release\Union.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\Union\obj\Release\Union.dll
 F:\Wetennis2016\Union\obj\Release\Union.pdb
+F:\WetennisGit\wetennisService\Union\bin\Release\Union.dll
+F:\WetennisGit\wetennisService\Union\bin\Release\Union.pdb
+F:\WetennisGit\wetennisService\Union\bin\Release\Club.dll
+F:\WetennisGit\wetennisService\Union\bin\Release\Member.dll
+F:\WetennisGit\wetennisService\Union\bin\Release\Gym.dll
+F:\WetennisGit\wetennisService\Union\bin\Release\SMS.dll
+F:\WetennisGit\wetennisService\Union\bin\Release\Club.pdb
+F:\WetennisGit\wetennisService\Union\bin\Release\Member.pdb
+F:\WetennisGit\wetennisService\Union\bin\Release\Gym.pdb
+F:\WetennisGit\wetennisService\Union\bin\Release\SMS.pdb
+F:\WetennisGit\wetennisService\Union\bin\Release\SMS.XmlSerializers.dll
+F:\WetennisGit\wetennisService\Union\obj\Release\Union.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\Union\obj\Release\Union.dll
+F:\WetennisGit\wetennisService\Union\obj\Release\Union.pdb

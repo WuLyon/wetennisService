@@ -327,6 +327,8 @@ namespace WeTour
                             model.Round = contr.roundNum;
 
                             AddTourDateRound(model);
+                            //update match for match date
+                            WeMatchDll.instance.AssignMatchDate(_TourSys, _Date, contr.roundNum);
                         }
                     }
                 }

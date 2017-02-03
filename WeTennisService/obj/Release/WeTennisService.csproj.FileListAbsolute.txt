@@ -69,3 +69,6 @@ F:\projects\WeTennis_backend_project\WetennisService\WeTennisService\obj\Release
 F:\Wetennis2016\WeTennisService\obj\Release\WeTennisService.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\WeTennisService\obj\Release\WeTennisService.dll
 F:\Wetennis2016\WeTennisService\obj\Release\WeTennisService.pdb
+F:\WetennisGit\wetennisService\WeTennisService\obj\Release\WeTennisService.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\WeTennisService\obj\Release\WeTennisService.dll
+F:\WetennisGit\wetennisService\WeTennisService\obj\Release\WeTennisService.pdb

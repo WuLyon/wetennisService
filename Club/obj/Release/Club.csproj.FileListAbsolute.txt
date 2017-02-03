@@ -32,3 +32,15 @@ F:\Wetennis2016\Club\bin\Release\SMS.XmlSerializers.dll
 F:\Wetennis2016\Club\obj\Release\Club.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\Club\obj\Release\Club.dll
 F:\Wetennis2016\Club\obj\Release\Club.pdb
+F:\WetennisGit\wetennisService\Club\bin\Release\Club.dll
+F:\WetennisGit\wetennisService\Club\bin\Release\Club.pdb
+F:\WetennisGit\wetennisService\Club\bin\Release\Gym.dll
+F:\WetennisGit\wetennisService\Club\bin\Release\Member.dll
+F:\WetennisGit\wetennisService\Club\bin\Release\SMS.dll
+F:\WetennisGit\wetennisService\Club\bin\Release\Gym.pdb
+F:\WetennisGit\wetennisService\Club\bin\Release\Member.pdb
+F:\WetennisGit\wetennisService\Club\bin\Release\SMS.pdb
+F:\WetennisGit\wetennisService\Club\bin\Release\SMS.XmlSerializers.dll
+F:\WetennisGit\wetennisService\Club\obj\Release\Club.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\Club\obj\Release\Club.dll
+F:\WetennisGit\wetennisService\Club\obj\Release\Club.pdb

@@ -13,3 +13,8 @@ F:\Wetennis2016\Member\bin\Release\Member.pdb
 F:\Wetennis2016\Member\obj\Release\Member.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\Member\obj\Release\Member.dll
 F:\Wetennis2016\Member\obj\Release\Member.pdb
+F:\WetennisGit\wetennisService\Member\bin\Release\Member.dll
+F:\WetennisGit\wetennisService\Member\bin\Release\Member.pdb
+F:\WetennisGit\wetennisService\Member\obj\Release\Member.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\Member\obj\Release\Member.dll
+F:\WetennisGit\wetennisService\Member\obj\Release\Member.pdb

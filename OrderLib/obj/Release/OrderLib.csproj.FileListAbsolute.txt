@@ -34,3 +34,15 @@ F:\Wetennis2016\OrderLib\bin\Release\SMS.XmlSerializers.dll
 F:\Wetennis2016\OrderLib\obj\Release\OrderLib.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\OrderLib\obj\Release\OrderLib.dll
 F:\Wetennis2016\OrderLib\obj\Release\OrderLib.pdb
+F:\WetennisGit\wetennisService\OrderLib\bin\Release\OrderLib.dll
+F:\WetennisGit\wetennisService\OrderLib\bin\Release\OrderLib.pdb
+F:\WetennisGit\wetennisService\OrderLib\bin\Release\Gym.dll
+F:\WetennisGit\wetennisService\OrderLib\bin\Release\SMS.dll
+F:\WetennisGit\wetennisService\OrderLib\bin\Release\Member.dll
+F:\WetennisGit\wetennisService\OrderLib\bin\Release\Gym.pdb
+F:\WetennisGit\wetennisService\OrderLib\bin\Release\SMS.pdb
+F:\WetennisGit\wetennisService\OrderLib\bin\Release\Member.pdb
+F:\WetennisGit\wetennisService\OrderLib\bin\Release\SMS.XmlSerializers.dll
+F:\WetennisGit\wetennisService\OrderLib\obj\Release\OrderLib.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\OrderLib\obj\Release\OrderLib.dll
+F:\WetennisGit\wetennisService\OrderLib\obj\Release\OrderLib.pdb

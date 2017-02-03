@@ -18,3 +18,8 @@ F:\Wetennis2016\News\bin\Release\News.pdb
 F:\Wetennis2016\News\obj\Release\News.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\News\obj\Release\News.dll
 F:\Wetennis2016\News\obj\Release\News.pdb
+F:\WetennisGit\wetennisService\News\bin\Release\News.dll
+F:\WetennisGit\wetennisService\News\bin\Release\News.pdb
+F:\WetennisGit\wetennisService\News\obj\Release\News.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\News\obj\Release\News.dll
+F:\WetennisGit\wetennisService\News\obj\Release\News.pdb

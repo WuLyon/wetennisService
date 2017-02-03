@@ -33,3 +33,15 @@ F:\Wetennis2016\SMS\obj\Release\SMS.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\SMS\obj\Release\SMS.dll
 F:\Wetennis2016\SMS\obj\Release\SMS.pdb
 F:\Wetennis2016\SMS\obj\Release\SMS.XmlSerializers.dll
+F:\WetennisGit\wetennisService\SMS\bin\Release\SMS.dll.config
+F:\WetennisGit\wetennisService\SMS\bin\Release\SMS.dll
+F:\WetennisGit\wetennisService\SMS\bin\Release\SMS.XmlSerializers.dll
+F:\WetennisGit\wetennisService\SMS\bin\Release\SMS.pdb
+F:\WetennisGit\wetennisService\SMS\bin\Release\Member.dll
+F:\WetennisGit\wetennisService\SMS\bin\Release\Member.pdb
+F:\WetennisGit\wetennisService\SMS\bin\Release\Newtonsoft.Json.pdb
+F:\WetennisGit\wetennisService\SMS\bin\Release\Newtonsoft.Json.xml
+F:\WetennisGit\wetennisService\SMS\obj\Release\SMS.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\SMS\obj\Release\SMS.dll
+F:\WetennisGit\wetennisService\SMS\obj\Release\SMS.pdb
+F:\WetennisGit\wetennisService\SMS\obj\Release\SMS.XmlSerializers.dll

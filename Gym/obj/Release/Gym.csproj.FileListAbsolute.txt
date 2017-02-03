@@ -8,3 +8,8 @@ F:\Wetennis2016\Gym\bin\Release\Gym.pdb
 F:\Wetennis2016\Gym\obj\Release\Gym.csprojResolveAssemblyReference.cache
 F:\Wetennis2016\Gym\obj\Release\Gym.dll
 F:\Wetennis2016\Gym\obj\Release\Gym.pdb
+F:\WetennisGit\wetennisService\Gym\bin\Release\Gym.dll
+F:\WetennisGit\wetennisService\Gym\bin\Release\Gym.pdb
+F:\WetennisGit\wetennisService\Gym\obj\Release\Gym.csprojResolveAssemblyReference.cache
+F:\WetennisGit\wetennisService\Gym\obj\Release\Gym.dll
+F:\WetennisGit\wetennisService\Gym\obj\Release\Gym.pdb

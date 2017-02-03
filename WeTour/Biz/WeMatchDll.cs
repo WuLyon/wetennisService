@@ -1889,5 +1889,32 @@ namespace WeTour
                 return list;
         }
         #endregion
+
+
+        #region Lyon
+        /// <summary>
+        /// Assign match date when add match date
+        /// </summary>
+        /// <param name="toursys"></param>
+        /// <param name="date"></param>
+        /// <param name="round"></param>
+        public bool AssignMatchDate(string _TourSys, string _Date, string _Round)
+        {
+            int round = -999999;
+            int.TryParse(_Round,out round);
+            StringBuilder sql = new StringBuilder();
+            sql.Append("update wtf_match set matchdate='" + _Date + "' where toursys='" + _TourSys +"'");
+            if (round < 0)
+            {
+                sql.Append(" and etc2='" + Math.Abs(round) + "' and round=0");
+            }
+            else
+            {
+                sql.Append(" and round='" + _Round + "'");
+            }
+            int a = DbHelperSQL.ExecuteSql(sql.ToString());
+            return a > 0 ? true : false;
+        }
+        #endregion
     }
 }
