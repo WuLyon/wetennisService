@@ -10,8 +10,11 @@ namespace SimpleTest
     {
         static void Main(string[] args)
         {
-            var result = ComputeDateDiff(DateTime.Now.ToString(), "2017-04-29");
-            Console.WriteLine(result*1000);
+            double value = Convert.ToDouble(15) /4;
+            Console.WriteLine("-> " + value);
+            int result = -99999;
+            int.TryParse(Math.Ceiling(value).ToString(), out result);
+            Console.WriteLine("EEEEEEE ->" + result);
             Console.Read();
         
         }

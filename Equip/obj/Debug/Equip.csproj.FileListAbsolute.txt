@@ -16,4 +16,3 @@ F:\WetennisGit\wetennisService\Equip\bin\Debug\Equip.dll
 F:\WetennisGit\wetennisService\Equip\bin\Debug\Equip.pdb
 F:\WetennisGit\wetennisService\Equip\obj\Debug\Equip.dll
 F:\WetennisGit\wetennisService\Equip\obj\Debug\Equip.pdb
-F:\WetennisGit\wetennisService\Equip\obj\Debug\Equip.csprojResolveAssemblyReference.cache

@@ -1769,9 +1769,9 @@ namespace WeTennisService.BackService
                 WeTourDll.instance.UpdateTourLogic(_TourSys);
 
                 //修改资源分配
+                //分配资源开始， 1 获取选择场馆和场地，时间，场地和赛事之间的那些事
 
-                TourResDisDll.instance.DistributeTourRes(_TourSys);
-                //ResTourDistridll.instance.DistributOne(_TourSys);
+                TourResDisDll.instance.DistributeCourt(_TourSys);
                 ret.code = 0;
                 ret.errorMsg = "";
                 ret.data = "分配成功";

@@ -99,6 +99,27 @@ namespace WeTour
             return nlist;
         }
 
+        public List<WeMatchModel> GetMatchlistbyContAscOrder(string _Contentid)
+        {
+            WeTourContModel wmodel = WeTourContentDll.instance.GetModelbyId(_Contentid);
+            List<WeMatchModel> list = new List<WeMatchModel>();
+            List<WeMatchModel> nlist = new List<WeMatchModel>();
+            string sql = "select * from wtf_match where contentid='" + _Contentid + "' order by convert(int,matchorder) asc";
+            DataTable dt = DbHelperSQL.Query(sql).Tables[0];
+            if (dt.Rows.Count > 0)
+            {
+                list = JsonHelper.ParseDtModelList<List<WeMatchModel>>(dt);
+            }
+            if (list.Count > 0)
+            {
+                foreach (WeMatchModel model in list)
+                {
+                    nlist.Add(RenderMatch(model.SYS));
+                }
+            }
+            return nlist;
+        }
+
         /// <summary>
         /// add information to a match
         /// </summary>
@@ -367,7 +388,7 @@ namespace WeTour
         {
             List<WeMatchModel> list = new List<WeMatchModel>();
             List<WeMatchModel> nlist = new List<WeMatchModel>();
-            string sql = "select * from wtf_match where toursys='" + _Toursys + "' and matchdate='"+_MatchDate+"' and courtId='"+_CourtId+"' order by CONVERT(int,place)";
+            string sql = "select * from wtf_match where toursys='" + _Toursys + "' and matchdate='"+_MatchDate+"' and courtId='"+_CourtId+"' order by CONVERT(int,matchorder) asc";
             DataTable dt = DbHelperSQL.Query(sql).Tables[0];
             if (dt.Rows.Count > 0)
             {
@@ -1093,6 +1114,12 @@ namespace WeTour
             string sql = "update wtf_match set matchdate='',place='',courtId='' where toursys='"+_TourSys+"'";
             int a = DbHelperSQL.ExecuteSql(sql);
         }
+
+        public void ClearMatchCourt(string _TourSys)
+        {
+            string sql = "update wtf_match set place='',courtId='' where toursys='" + _TourSys + "'";
+            int a = DbHelperSQL.ExecuteSql(sql);
+        }
         #endregion
 
         #region Match Umpire
@@ -1572,7 +1599,7 @@ namespace WeTour
             {
                 Fe_Model_Schedule courtDateMatch = new Fe_Model_Schedule();
                 courtDateMatch.matchId = match.SYS;
-                courtDateMatch.matches = "第"+match.PLACE+"场";
+                courtDateMatch.matches = "第"+match.matchorder+"场";
 
                 string Desc = "";
                 WeTourContModel cont = WeTourContentDll.instance.GetModelbyId(match.ContentID);
@@ -1913,6 +1940,21 @@ namespace WeTour
                 sql.Append(" and round='" + _Round + "'");
             }
             int a = DbHelperSQL.ExecuteSql(sql.ToString());
+            return a > 0 ? true : false;
+        }
+
+        public bool AssignMatchCourt(string _MatchSys, string _CounrtId)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("update wtf_match set courtid='" + _CounrtId + "' where sys='" + _MatchSys + "'");
+            int a = DbHelperSQL.ExecuteSql(sb.ToString());
+            return a > 0 ? true : false;
+        }
+
+        public bool ResetMatchCourt(string _TourSys)
+        {
+            string sql = "update wtf_match set courtId='' where toursys='" + _TourSys + "'";
+            int a = DbHelperSQL.ExecuteSql(sql);
             return a > 0 ? true : false;
         }
         #endregion

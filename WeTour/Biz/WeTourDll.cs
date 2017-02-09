@@ -781,7 +781,7 @@ namespace WeTour
         public string RenderRound(int _Round, int _Capacity)
         {
             string RoundInfo = "";
-            double Total = Math.Log(Convert.ToDouble(_Capacity), 2);
+            double Total = _Capacity == 0? 0: Math.Log(Convert.ToDouble(_Capacity), 2);
             int _Tot = Convert.ToInt32(Math.Round(Total));
             if (_Round == _Tot&&_Round!=0)
             {

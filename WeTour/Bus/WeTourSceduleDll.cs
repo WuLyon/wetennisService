@@ -71,9 +71,12 @@ namespace WeTour
                 for(int i=0;i<dt.Rows.Count;i++)
                 {
                     Dictionary<string, string> item = new Dictionary<string, string>();
-                    item.Add("text", dt.Rows[i][0].ToString());
-                    item.Add("value", dt.Rows[i][0].ToString());
-                    tourdates.Add(item);
+                    if (!string.IsNullOrEmpty(dt.Rows[i][0].ToString()))
+                    {
+                        item.Add("text", dt.Rows[i][0].ToString());
+                        item.Add("value", dt.Rows[i][0].ToString());
+                        tourdates.Add(item);
+                    }
                 }
             }
             return tourdates;

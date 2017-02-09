@@ -203,9 +203,7 @@
     <Content Include="API\FEservice.ashx" />
     <Content Include="BackService\TourMgmJson.ashx" />
     <Content Include="API\PayMent.ashx" />
-    <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <None Include="Properties\PublishProfiles\VMCloud.pubxml" />
-    <None Include="Properties\PublishProfiles\WetennisApi.pubxml" />
+    <None Include="Properties\PublishProfiles\PublishApi.pubxml" />
     <None Include="Properties\PublishProfiles\WetennisService.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -286,12 +286,12 @@ namespace WeTour
                 }
             }
         }
-                                                                                                          /// <summary>
-                                                                                                          /// 重新排布项目列表,将相同轮次排在一起
-                                                                                                          /// 使用冒泡算法，2016-09-15，刘涛
-                                                                                                          /// </summary>
-                                                                                                          /// <param name="rlist"></param>
-                                                                                                          /// <returns></returns>
+        /// <summary>
+        /// 重新排布项目列表,将相同轮次排在一起
+        /// 使用冒泡算法，2016-09-15，刘涛
+        /// </summary>
+        /// <param name="rlist"></param>
+        /// <returns></returns>
         private List<Model_TourDateRound> RearrangeTour(List<Model_TourDateRound> rlist)
         {
             List<Model_TourDateRound> n_list = new List<Model_TourDateRound>();
@@ -327,8 +327,8 @@ namespace WeTour
             //清楚资源分配
             WeMatchDll.instance.Clear_Resource(_Toursys);
 
-            //修改逻辑
-            WeTourDll.instance.UpdateTourLogic(_Toursys);
+            ////修改逻辑
+            //WeTourDll.instance.UpdateTourLogic(_Toursys);
 
             //根据赛事主键，获取比赛日期
             List<Model_TourDate> dlist = Biz_TourDate.instance.GetTourDate(_Toursys);
@@ -592,5 +592,47 @@ namespace WeTour
             _LastcourRound = _courRound;
         }
         #endregion
+
+        /// <summary>
+        /// 分配场地资源
+        /// </summary>
+        /// <param name="_Toursys"></param>
+        public void DistributeCourt(string _Toursys)
+        {
+            //清除已分配的场地
+            WeMatchDll.instance.ResetMatchCourt(_Toursys);
+            List<WeTourContModel> tourContents = WeTourContentDll.instance.GetContentlist(_Toursys);
+            foreach (var content in tourContents)
+            {
+                List<WeMatchModel> allmatchsOfContent = WeMatchDll.instance.GetMatchlistbyContAscOrder(content.id);
+                List<Model_TourGymCourts> tourGymCounrts = Biz_TourGyms.instance.GetTourGymCourtsByTourSys(_Toursys);
+                if (null != tourGymCounrts && tourGymCounrts.Count > 0 && null != allmatchsOfContent && allmatchsOfContent.Count > 0)
+                {
+                    double average = Convert.ToDouble(allmatchsOfContent.Count) / tourGymCounrts.Count;
+                    var matchPerCounrt = -999999;
+                    int.TryParse(Math.Ceiling(average).ToString(), out matchPerCounrt);
+                    if (matchPerCounrt == 1)
+                    {
+                        for (int i = 0; i < allmatchsOfContent.Count; i++)
+                        {
+                            WeMatchDll.instance.AssignMatchCourt(allmatchsOfContent[i].SYS, tourContents[i].id);
+                        }
+                    }
+                    else if (matchPerCounrt > 1)
+                    {
+                        int skip = 0;
+                        foreach (var court in tourGymCounrts)
+                        {
+                            List<WeMatchModel> matchGroup = allmatchsOfContent.Skip(skip).Take(matchPerCounrt).ToList();
+                            foreach (var innerMatch in matchGroup)
+                            {
+                                WeMatchDll.instance.AssignMatchCourt(innerMatch.SYS, court.ID);
+                            }
+                            skip += matchPerCounrt;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

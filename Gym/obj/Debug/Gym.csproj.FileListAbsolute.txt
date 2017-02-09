@@ -19,6 +19,6 @@ F:\Wetennis2016\Gym\obj\Debug\Gym.dll
 F:\Wetennis2016\Gym\obj\Debug\Gym.pdb
 F:\WetennisGit\wetennisService\Gym\bin\Debug\Gym.dll
 F:\WetennisGit\wetennisService\Gym\bin\Debug\Gym.pdb
-F:\WetennisGit\wetennisService\Gym\obj\Debug\Gym.csprojResolveAssemblyReference.cache
 F:\WetennisGit\wetennisService\Gym\obj\Debug\Gym.dll
 F:\WetennisGit\wetennisService\Gym\obj\Debug\Gym.pdb
+F:\WetennisGit\wetennisService\Gym\obj\Debug\Gym.csprojResolveAssemblyReference.cache
