@@ -213,6 +213,7 @@ namespace WeTour
                     model.SIGNORDER = dt.Rows[i]["SignOrder"].ToString();
                     model.SEED = "";
                     model.id = dt.Rows[i]["id"].ToString();
+                    model.MEMBERSYS = dt.Rows[i]["membersys"].ToString();
                     if (dt.Rows[i]["membersys"].ToString().IndexOf(",") > 0)
                     {
                         //double player
@@ -463,7 +464,7 @@ namespace WeTour
                     SeedGroup += SignOrder + ",";
                     if (SignOrder != "")
                     {
-                         AddPlayerToSign(smodel.MEMBERSYS, SignOrder, _ContentId);
+                         AddPlayerToSign(cont.Toursys, smodel.MEMBERSYS, SignOrder, _ContentId);
                     }
                 }
                 SeedGroup = SeedGroup.TrimEnd(',');
@@ -485,6 +486,7 @@ namespace WeTour
                     {
                         GroupQ += 1;
                     }
+
                     for (int a = 0; a < GroupQ; a++)
                     {
                         for (int i = 0; i < signQ; i++)
@@ -494,22 +496,8 @@ namespace WeTour
                             {
                                 break;
                             }
-
-                            //检查小组是否是种子小组
-                            bool isSeedg = false;
-                            if (seedG.Length > 0)
-                            {
-                               
-                                for (int k = 0; k < seedG.Length; k++)
-                                {
-                                    if (seedG[k] == (i + 1).ToString())
-                                    {
-                                        isSeedg = true;
-                                        break;
-                                    }
-                                }                                
-                            }
-                            if (!isSeedg)
+                           
+                            if (seedG.Length == 0 || !seedG.Any(s => s == (i + 1).ToString()))
                             {
                                 string _Membersys = "";
                                 if (cont.ContentType.IndexOf("双") > 0)
@@ -520,8 +508,8 @@ namespace WeTour
                                 {
                                     _Membersys = list[j].MEMBERID;
                                 }
-                               
-                                AddPlayerToSign(_Membersys, (i + 1).ToString(), _ContentId);
+
+                                AddPlayerToSign(cont.Toursys, _Membersys, (i + 1).ToString(), _ContentId);
                                 
                                 j += 1;
                             }                           
@@ -608,45 +596,58 @@ namespace WeTour
             return list;
         }
 
-        private void AddPlayerToSign(string _Player, string SignOrder,string _Contentid)
+        private void AddPlayerToSign(string _Toursys, string _Player, string SignOrder,string _Contentid)
         {
             List<WeTourSignModel> list = GetSignList(_Contentid, SignOrder);
             if (list.Count > 0)
             {
-                if (list.Count > 1)
+                //小组资格赛
+                //修改此前的签位的Round
+                string sql = "update wtf_Toursign set round='0' where contentid='" + _Contentid + "' and Signorder='" + SignOrder + "'";
+                int a = DbHelperSQL.ExecuteSql(sql);
+
+                if (list.Any(s => s.MEMBERSYS == _Player && s.MEMBERSYS != "1bf973ea-7d4c-41d1-aa05-8bf68b567d77"))
                 {
-                    //小组资格赛
-                    //修改此前的签位的Round
-                    string sql = "update wtf_Toursign set round='0' where contentid='" + _Contentid + "' and Signorder='" + SignOrder + "'";
-                    int a = DbHelperSQL.ExecuteSql(sql);
-                    WeTourSignModel model = list[0];
-                    model.MEMBERSYS = _Player;
-                    model.GROUPID = SignOrder;
-                    model.ROUND = "0";
-                    InsertNew(model);    
+                    //已经分配过了，所以不再分配了
                 }
-                else
-                { 
-                    
-                    //单个签
-                    if (list[0].MEMBERSYS == "1bf973ea-7d4c-41d1-aa05-8bf68b567d77")
+                else if (list.Any(s => s.MEMBERSYS == "1bf973ea-7d4c-41d1-aa05-8bf68b567d77"))
+                {
+                    var placeHoder = list.Where(s => s.MEMBERSYS == "1bf973ea-7d4c-41d1-aa05-8bf68b567d77").FirstOrDefault();
+                    //轮空签,替换
+                    if (null != placeHoder)
                     {
-                        //轮空签,替换
-                        list[0].MEMBERSYS = _Player;
-                        list[0].GROUPID=SignOrder;
+                        placeHoder.MEMBERSYS = _Player;
+                        placeHoder.GROUPID = SignOrder;
+                        placeHoder.CONTENTID = _Contentid;
+                        placeHoder.SIGNORDER = SignOrder;
+                        placeHoder.TOURSYS = _Toursys;
+                        placeHoder.ROUND = "0";
                         UpdateSignPlayer(list[0]);
                     }
-                    else
-                    { 
-                        //非轮空签，增加球员
-                        //判断是否已作为种子添加到
-                        WeTourSignModel model = list[0];
-                        model.MEMBERSYS = _Player;
-                        model.GROUPID = SignOrder;
-                        model.ROUND = "1";
-                        InsertNew(model);                        
-                    }
                 }
+                else
+                {
+                    //如果没有分配过，那么就将这个player分配到该签位上
+                    WeTourSignModel model = new WeTourSignModel();
+                    model.MEMBERSYS = _Player;
+                    model.GROUPID = SignOrder;
+                    model.CONTENTID = _Contentid;
+                    model.SIGNORDER = SignOrder;
+                    model.TOURSYS = _Toursys;
+                    model.ROUND = "0";
+                    InsertNew(model);      
+                }
+            }
+            else
+            {
+                WeTourSignModel model = new WeTourSignModel();
+                model.MEMBERSYS = _Player;
+                model.GROUPID = SignOrder;
+                model.CONTENTID = _Contentid;
+                model.SIGNORDER = SignOrder;
+                model.TOURSYS = _Toursys;
+                model.ROUND = "0";
+                InsertNew(model);      
             }
         }
 
@@ -1585,6 +1586,15 @@ namespace WeTour
             }
         }
 
+        #endregion
+
+        #region lyon
+        public bool isPaied(string memersys, string toursys)
+        {
+            string sql = "select * from wtf_tourapply where toursys='" + toursys + "' and memberid='" + memersys + "' and status=2";
+            DataTable dt = DbHelperSQL.Query(sql).Tables[0];
+            return dt.Rows.Count > 0;
+        }
         #endregion
     }
 }

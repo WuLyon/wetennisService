@@ -86,6 +86,7 @@ namespace WeTour
         /// 赛事说明链接
         /// </summary>
         public string eventDetailLink { get; set; }
+        public bool isPaied { get; set; }
     }
 
     public class rigisterCont {

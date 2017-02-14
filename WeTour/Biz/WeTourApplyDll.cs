@@ -1004,7 +1004,16 @@ namespace WeTour
                         {
                             model.CONTENTID = cont.id;
                             model.CONTENTNAME = cont.ContentName;
-                            model.STATUS = "1";
+                            int price = -999;
+                            int.TryParse(model.EXT3, out price);
+                            if (price == 0)
+                            {
+                                model.STATUS = "2";
+                            }
+                            else
+                            { 
+                                model.STATUS = "1"; 
+                            }
                             //查找用户信息                            
                             WeMemberModel mem = WeMemberDll.instance.GetModelbyTelephone(Tele);
                             if (mem.SYSNO == null)

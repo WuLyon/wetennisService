@@ -286,7 +286,9 @@ namespace WeTennisService.BackService
                         Dis_TourResource(context);
                         break;
                 #endregion
-
+                case "RandomDistributeSign":
+                        RandomDistributeSign(context);
+                        break;
 
                 #endregion
 
@@ -1783,6 +1785,24 @@ namespace WeTennisService.BackService
             }
             context.Response.Write(JsonHelper.ToJson(ret));
         }
+
+
+        void RandomDistributeSign(HttpContext context)
+        {
+            context.Response.AddHeader("Access-Control-Allow-Origin", _AllowOrigin);
+            string _Res = "";
+            try
+            {
+                string _ContentId = context.Request.Params["contid"];
+                WeTourSignDll.instance.RandomSign(_ContentId);
+                _Res = "{\"code\":0,errormsg:\"更新成功\"}";
+            }
+            catch (Exception e)
+            {
+                _Res = "{\"code\":1,errormsg:\"" + e.ToString().Substring(0, 100) + "\"}";
+            }
+            context.Response.Write(_Res);
+        } 
         #endregion
 
         #endregion

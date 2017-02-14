@@ -1327,7 +1327,7 @@ namespace WeTennisService.API
                 string _Phone = req.phone;
                 string _PersonCard = req.personCard;
                 string _parterner = req.partnerId;
-                        
+                bool isPaied = false; 
                 //添加报名信息
                 WeTourContModel cont=WeTourContentDll.instance.GetModelbyId(_ItemId);
                 WeTourApplyModel apply = new WeTourApplyModel();
@@ -1344,13 +1344,20 @@ namespace WeTennisService.API
                 string validatemsg=WeTourApplyDll.instance.ValidateContApply(apply, 1);
                 if (validatemsg == "ok")
                 {
+                    var price = 0.00;
+                    double.TryParse(cont.ext3,out price);
                     //添加报名费用订单
                     string ordersys = WeTourApplyDll.instance.AddApplyOrder(cont.Toursys, _ItemId, _UserId, apply.PATERNER);
-
-                    Dictionary<String, String> pList = new Dictionary<String, String>();
-                    pList.Add("payUrl", "http://wetennis.cn/WeiPayWeb/wechatpay.html?orderNum=" + ordersys);
-                    ret.data = pList;
-
+                    if (price > 0)
+                    {
+                        Dictionary<String, String> pList = new Dictionary<String, String>();
+                        pList.Add("payUrl", "http://wetennis.cn/WeiPayWeb/wechatpay.html?orderNum=" + ordersys);
+                        ret.data = pList;
+                    }
+                    else
+                    {
+                        apply.STATUS = "2";
+                    }
                     apply.EXT2 = ordersys;
 
                     if (WeTourApplyDll.instance.InsertNewApply(apply))

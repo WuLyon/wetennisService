@@ -253,7 +253,7 @@ namespace WeTour
 
             //赛事链接,2016-12-17
             model.eventDetailLink = tour.ext8;
-
+            model.isPaied = WeTourSignDll.instance.isPaied(_userid, _id);
             return model;
         }
 
